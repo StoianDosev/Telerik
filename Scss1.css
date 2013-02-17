@@ -1,0 +1,181 @@
+html, body, div, header, article, section, aside, nav, footer, h1, h2, p, a, form, button, input, label, ul, li {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+body {
+  color: white;
+  background-color: #8f1aef; }
+  body header #header-container {
+    zoom: 1;
+    background: #d591ff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #d591ff 0%, #8f1aef 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d591ff), color-stop(100%, #8f1aef));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #d591ff 0%, #8f1aef 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #d591ff 0%, #8f1aef 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #d591ff 0%, #8f1aef 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #d591ff 0%, #8f1aef 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d591ff', endColorstr='#8f1aef',GradientType=0 );
+    /* IE6-8 */
+    padding-bottom: 20px; }
+    body header #header-container:after {
+      display: block;
+      height: 0;
+      content: "";
+      clear: both; }
+    body header #header-container #logo-container {
+      padding-top: 25px;
+      padding-left: 15px;
+      float: left; }
+    body header #header-container #reg-form-container {
+      padding-right: 110px;
+      padding-top: 25px;
+      float: right; }
+      body header #header-container #reg-form-container input[type=text], body header #header-container #reg-form-container input[type=password] {
+        background-color: #AF55F2;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        width: 140px;
+        height: 20px; }
+      body header #header-container #reg-form-container label {
+        font-size: 14px;
+        font-family: Areal;
+        margin-right: 10px; }
+      body header #header-container #reg-form-container #btn-register {
+        position: relative;
+        right: 5px;
+        font-family: Areal;
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+        background: #AF55F2;
+        border-radius: 10px;
+        width: 90px;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        border-top: 1px solid #C0AFCE;
+        border-left: 1px solid #C0AFCE;
+        padding: 7px; }
+  body header nav {
+    background-color: #8f1aef; }
+    body header nav ul {
+      list-style-type: none;
+      border: 1px solid black;
+      border-radius: 20px;
+      height: 40px;
+      width: 1450px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      margin-left: 35px; }
+      body header nav ul li {
+        padding: 10px;
+        display: inline-block; }
+        body header nav ul li a {
+          font-size: 1.3em;
+          font-family: Areal; }
+        body header nav ul li ul {
+          display: none;
+          position: absolute;
+          left: 120px;
+          width: 240px;
+          height: 300px;
+          background-color: #AF55F2;
+          border: none;
+          border-radius: 10px;
+          margin: 0;
+          padding: 0; }
+          body header nav ul li ul li {
+            padding: 10px 0;
+            padding-left: 5px;
+            margin: 0 15px;
+            display: block; }
+            body header nav ul li ul li {
+              border-bottom: 1px solid black; }
+            body header nav ul li ul li:last-of-type {
+              border-bottom: none; }
+            body header nav ul li ul li a {
+              font-size: 1.2em; }
+        body header nav ul li:hover a {
+          text-decoration: underline;
+          color: #A8A8A8; }
+        body header nav ul li:hover .sub-nav-list {
+          display: block; }
+          body header nav ul li:hover .sub-nav-list a {
+            text-decoration: none;
+            color: white; }
+          body header nav ul li:hover .sub-nav-list li a:hover {
+            text-decoration: underline;
+            color: #A8A8A8; }
+  body section {
+    float: left;
+    width: 1390px;
+    padding-top: 25px; }
+    body section article {
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 20px 20px;
+      padding: 40px 20px;
+      padding-bottom: 50px;
+      font-size: 14px; }
+      body section article header {
+        font: 1.2em bold;
+        margin-left: 5px; }
+      body section article footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        float: right; }
+        body section article footer p a {
+          color: #D191FC; }
+        body section article footer p time {
+          font-family: Consolas, "Lucida Console", "DejaVu Sans Mono", monospace; }
+  body aside {
+    float: right;
+    width: 320px;
+    margin-top: 40px;
+    margin-right: 170px; }
+    body aside ul {
+      list-style-type: none; }
+      body aside ul li {
+        margin: 15px;
+        margin-left: 0;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-family: Areal;
+        font-size: 14px; }
+        body aside ul li h2 {
+          font-family: Areal;
+          font-size: 1.2em;
+          font-weight: bold;
+          margin-bottom: 10px; }
+      body aside ul li ul li {
+        border: none;
+        padding: 0;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 30px;
+        margin: 0;
+        background: url(li-dot.png) no-repeat;
+        background-size: 20px 10px;
+        background-position: 5px; }
+  body > footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px; }
+    body > footer p {
+      font-size: 1.1em;
+      font-weight: bold;
+      text-align: center; }
+
