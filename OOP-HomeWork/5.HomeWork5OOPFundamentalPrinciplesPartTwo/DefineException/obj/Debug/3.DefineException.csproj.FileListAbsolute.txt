@@ -1,0 +1,12 @@
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\DefineException\bin\Debug\DefineException.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\DefineException\bin\Debug\DefineException.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\DefineException\bin\Debug\DefineException.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\DefineException\obj\Debug\DefineException.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\DefineException\obj\Debug\DefineException.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\DefineException\obj\Debug\3.DefineException.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\DefineException\bin\Debug\DefineException.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\DefineException\obj\Debug\DefineException.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\DefineException\obj\Debug\DefineException.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\DefineException\bin\Debug\DefineException.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\DefineException\bin\Debug\DefineException.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\DefineException\obj\Debug\3.DefineException.csprojResolveAssemblyReference.cache

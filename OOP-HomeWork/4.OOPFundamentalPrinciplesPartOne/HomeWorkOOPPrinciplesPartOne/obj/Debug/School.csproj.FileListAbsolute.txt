@@ -1,0 +1,6 @@
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\OOPFundamentalPrinciplesPartOne\HomeWorkOOPPrinciplesPartOne\obj\Debug\School.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\OOPFundamentalPrinciplesPartOne\HomeWorkOOPPrinciplesPartOne\bin\Debug\HomeWorkOOPPrinciplesPartOne.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\OOPFundamentalPrinciplesPartOne\HomeWorkOOPPrinciplesPartOne\bin\Debug\HomeWorkOOPPrinciplesPartOne.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\OOPFundamentalPrinciplesPartOne\HomeWorkOOPPrinciplesPartOne\bin\Debug\HomeWorkOOPPrinciplesPartOne.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\OOPFundamentalPrinciplesPartOne\HomeWorkOOPPrinciplesPartOne\obj\Debug\HomeWorkOOPPrinciplesPartOne.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\OOPFundamentalPrinciplesPartOne\HomeWorkOOPPrinciplesPartOne\obj\Debug\HomeWorkOOPPrinciplesPartOne.pdb

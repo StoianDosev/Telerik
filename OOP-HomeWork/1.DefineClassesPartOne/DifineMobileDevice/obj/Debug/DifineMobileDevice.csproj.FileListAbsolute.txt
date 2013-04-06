@@ -1,0 +1,18 @@
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\1.DifineMobileDevice\bin\Debug\1.DifineMobileDevice.exe.config
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\1.DifineMobileDevice\bin\Debug\1.DifineMobileDevice.exe
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\1.DifineMobileDevice\bin\Debug\1.DifineMobileDevice.pdb
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\1.DifineMobileDevice\obj\Debug\DifineMobileDevice.csprojResolveAssemblyReference.cache
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\1.DifineMobileDevice\obj\Debug\1.DifineMobileDevice.exe
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\1.DifineMobileDevice\obj\Debug\1.DifineMobileDevice.pdb
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\DifineMobileDevice\bin\Debug\1.DifineMobileDevice.exe.config
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\DifineMobileDevice\obj\Debug\1.DifineMobileDevice.exe
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\DifineMobileDevice\obj\Debug\1.DifineMobileDevice.pdb
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\DifineMobileDevice\obj\Debug\DifineMobileDevice.csprojResolveAssemblyReference.cache
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\DifineMobileDevice\bin\Debug\1.DifineMobileDevice.exe
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\DifineMobileDevice\bin\Debug\1.DifineMobileDevice.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\DifineMobileDevice\bin\Debug\1.DifineMobileDevice.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\DifineMobileDevice\obj\Debug\1.DifineMobileDevice.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\DifineMobileDevice\obj\Debug\1.DifineMobileDevice.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\DifineMobileDevice\bin\Debug\1.DifineMobileDevice.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\DifineMobileDevice\bin\Debug\1.DifineMobileDevice.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\DefineClassesPartOne\DifineMobileDevice\obj\Debug\DifineMobileDevice.csprojResolveAssemblyReference.cache

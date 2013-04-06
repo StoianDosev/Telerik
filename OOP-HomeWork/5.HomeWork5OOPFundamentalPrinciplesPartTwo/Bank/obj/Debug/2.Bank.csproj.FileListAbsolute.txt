@@ -1,0 +1,12 @@
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\Bank\bin\Debug\Bank.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\Bank\bin\Debug\Bank.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\Bank\bin\Debug\Bank.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\Bank\obj\Debug\2.Bank.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\Bank\obj\Debug\Bank.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\Bank\obj\Debug\Bank.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\Bank\bin\Debug\Bank.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\Bank\obj\Debug\Bank.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\Bank\obj\Debug\Bank.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\Bank\bin\Debug\Bank.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\Bank\bin\Debug\Bank.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\Bank\obj\Debug\2.Bank.csprojResolveAssemblyReference.cache

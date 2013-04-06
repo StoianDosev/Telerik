@@ -1,0 +1,18 @@
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\obj\Debug\1.SubstringInStringBuilder.csprojResolveAssemblyReference.cache
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\bin\Debug\SubstringInStringBuilder.exe.config
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\bin\Debug\SubstringInStringBuilder.exe
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\bin\Debug\SubstringInStringBuilder.pdb
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\obj\Debug\SubstringInStringBuilder.exe
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\obj\Debug\SubstringInStringBuilder.pdb
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\bin\Debug\SubstringInStringBuilder.exe.config
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\obj\Debug\SubstringInStringBuilder.exe
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\obj\Debug\SubstringInStringBuilder.pdb
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\bin\Debug\SubstringInStringBuilder.exe
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\bin\Debug\SubstringInStringBuilder.pdb
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\obj\Debug\1.SubstringInStringBuilder.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\bin\Debug\SubstringInStringBuilder.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\obj\Debug\SubstringInStringBuilder.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\obj\Debug\SubstringInStringBuilder.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\bin\Debug\SubstringInStringBuilder.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\bin\Debug\SubstringInStringBuilder.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\obj\Debug\1.SubstringInStringBuilder.csprojResolveAssemblyReference.cache

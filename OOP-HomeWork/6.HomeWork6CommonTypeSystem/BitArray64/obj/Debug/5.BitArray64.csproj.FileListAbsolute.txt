@@ -1,0 +1,12 @@
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\BitArray64\bin\Debug\BitArray64.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\BitArray64\obj\Debug\BitArray64.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\BitArray64\obj\Debug\BitArray64.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\BitArray64\bin\Debug\BitArray64.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\BitArray64\bin\Debug\BitArray64.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\BitArray64\obj\Debug\5.BitArray64.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\6.HomeWork6CommonTypeSystem\BitArray64\bin\Debug\BitArray64.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\6.HomeWork6CommonTypeSystem\BitArray64\obj\Debug\BitArray64.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\6.HomeWork6CommonTypeSystem\BitArray64\obj\Debug\BitArray64.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\6.HomeWork6CommonTypeSystem\BitArray64\bin\Debug\BitArray64.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\6.HomeWork6CommonTypeSystem\BitArray64\bin\Debug\BitArray64.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\6.HomeWork6CommonTypeSystem\BitArray64\obj\Debug\5.BitArray64.csprojResolveAssemblyReference.cache

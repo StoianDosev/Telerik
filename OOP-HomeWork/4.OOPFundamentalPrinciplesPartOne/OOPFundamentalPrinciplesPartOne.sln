@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.School", "HomeWorkOOPPrinciplesPartOne\1.School.csproj", "{63322477-AC07-42EE-AFEF-44DB6542AA85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.Human", "Human\2.Human.csproj", "{5E7F7F23-BCC5-41D0-8EE3-858A075F7904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Hierarchy", "Hierarchy\3.Hierarchy.csproj", "{6A101C48-8BBC-4BBF-BFF6-36D28B33AFFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63322477-AC07-42EE-AFEF-44DB6542AA85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63322477-AC07-42EE-AFEF-44DB6542AA85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63322477-AC07-42EE-AFEF-44DB6542AA85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63322477-AC07-42EE-AFEF-44DB6542AA85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E7F7F23-BCC5-41D0-8EE3-858A075F7904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7F7F23-BCC5-41D0-8EE3-858A075F7904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E7F7F23-BCC5-41D0-8EE3-858A075F7904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7F7F23-BCC5-41D0-8EE3-858A075F7904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A101C48-8BBC-4BBF-BFF6-36D28B33AFFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A101C48-8BBC-4BBF-BFF6-36D28B33AFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A101C48-8BBC-4BBF-BFF6-36D28B33AFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A101C48-8BBC-4BBF-BFF6-36D28B33AFFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\DefineStudent\bin\Debug\DefineStudent.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\DefineStudent\bin\Debug\DefineStudent.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\DefineStudent\bin\Debug\DefineStudent.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\DefineStudent\obj\Debug\DefineStudent.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\DefineStudent\obj\Debug\DefineStudent.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\DefineStudent\obj\Debug\DefineStudent.pdb

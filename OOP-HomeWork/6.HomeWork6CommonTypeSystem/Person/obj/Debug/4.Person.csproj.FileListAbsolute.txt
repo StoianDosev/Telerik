@@ -1,0 +1,12 @@
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\Person\bin\Debug\Person.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\Person\obj\Debug\Person.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\Person\obj\Debug\Person.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\Person\bin\Debug\Person.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\Person\bin\Debug\Person.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork6CommonTypeSystem\Person\obj\Debug\4.Person.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\6.HomeWork6CommonTypeSystem\Person\bin\Debug\Person.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\6.HomeWork6CommonTypeSystem\Person\obj\Debug\Person.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\6.HomeWork6CommonTypeSystem\Person\obj\Debug\Person.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\6.HomeWork6CommonTypeSystem\Person\bin\Debug\Person.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\6.HomeWork6CommonTypeSystem\Person\bin\Debug\Person.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\6.HomeWork6CommonTypeSystem\Person\obj\Debug\4.Person.csprojResolveAssemblyReference.cache

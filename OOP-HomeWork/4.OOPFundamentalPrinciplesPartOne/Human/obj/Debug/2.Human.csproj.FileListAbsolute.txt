@@ -1,0 +1,8 @@
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\OOPFundamentalPrinciplesPartOne\Human\bin\Debug\Human.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\OOPFundamentalPrinciplesPartOne\Human\obj\Debug\Human.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\OOPFundamentalPrinciplesPartOne\Human\obj\Debug\Human.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\OOPFundamentalPrinciplesPartOne\Human\bin\Debug\Human.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\OOPFundamentalPrinciplesPartOne\Human\bin\Debug\Human.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\4.OOPFundamentalPrinciplesPartOne\Human\bin\Debug\Human.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\4.OOPFundamentalPrinciplesPartOne\Human\obj\Debug\Human.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\4.OOPFundamentalPrinciplesPartOne\Human\obj\Debug\Human.pdb

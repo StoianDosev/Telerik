@@ -1,0 +1,6 @@
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\AllNumbersDevidedOnSevenAndThree\bin\Debug\AllNumbersDevidedOnSevenAndThree.exe.config
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\AllNumbersDevidedOnSevenAndThree\bin\Debug\AllNumbersDevidedOnSevenAndThree.exe
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\AllNumbersDevidedOnSevenAndThree\bin\Debug\AllNumbersDevidedOnSevenAndThree.pdb
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\AllNumbersDevidedOnSevenAndThree\obj\Debug\4.AllNumbersDevidedOnSevenAndThree.csprojResolveAssemblyReference.cache
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\AllNumbersDevidedOnSevenAndThree\obj\Debug\AllNumbersDevidedOnSevenAndThree.exe
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\AllNumbersDevidedOnSevenAndThree\obj\Debug\AllNumbersDevidedOnSevenAndThree.pdb

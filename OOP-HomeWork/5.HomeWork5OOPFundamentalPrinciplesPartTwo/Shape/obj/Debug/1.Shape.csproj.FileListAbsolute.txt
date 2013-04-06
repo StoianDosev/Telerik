@@ -1,0 +1,12 @@
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\Shape\obj\Debug\1.Shape.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\Shape\bin\Debug\Shape.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\Shape\bin\Debug\Shape.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\Shape\bin\Debug\Shape.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\Shape\obj\Debug\Shape.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\HomeWork5OOPFundamentalPrinciplesPartTwo\Shape\obj\Debug\Shape.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\Shape\bin\Debug\Shape.exe.config
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\Shape\obj\Debug\Shape.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\Shape\obj\Debug\Shape.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\Shape\bin\Debug\Shape.exe
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\Shape\bin\Debug\Shape.pdb
+E:\SkyDrive\TelerikAcademy\OOP\HomeWork\5.HomeWork5OOPFundamentalPrinciplesPartTwo\Shape\obj\Debug\1.Shape.csprojResolveAssemblyReference.cache

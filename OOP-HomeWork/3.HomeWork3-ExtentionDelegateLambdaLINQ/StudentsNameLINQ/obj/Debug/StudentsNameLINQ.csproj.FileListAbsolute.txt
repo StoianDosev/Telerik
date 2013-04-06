@@ -1,0 +1,6 @@
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\StudentsNameLINQ\bin\Debug\StudentsNameLINQ.exe.config
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\StudentsNameLINQ\bin\Debug\StudentsNameLINQ.exe
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\StudentsNameLINQ\bin\Debug\StudentsNameLINQ.pdb
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\StudentsNameLINQ\obj\Debug\StudentsNameLINQ.csprojResolveAssemblyReference.cache
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\StudentsNameLINQ\obj\Debug\StudentsNameLINQ.exe
+E:\GoogleDrive\Google Drive\TelerikAcademy\OOP\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\StudentsNameLINQ\obj\Debug\StudentsNameLINQ.pdb

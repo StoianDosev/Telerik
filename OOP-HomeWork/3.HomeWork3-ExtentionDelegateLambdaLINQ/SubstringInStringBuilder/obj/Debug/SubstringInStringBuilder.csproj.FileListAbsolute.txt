@@ -1,0 +1,1 @@
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\HomeWork3-ExtentionDelegateLambdaLINQ\SubstringInStringBuilder\bin\Debug\SubstringInStringBuilder.exe.config
