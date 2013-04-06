@@ -1,0 +1,5 @@
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Objects\Objects\bin\Objects.dll
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Objects\Objects\bin\Objects.pdb
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Objects\Objects\obj\Debug\Objects.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Objects\Objects\obj\Debug\Objects.dll
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Objects\Objects\obj\Debug\Objects.pdb

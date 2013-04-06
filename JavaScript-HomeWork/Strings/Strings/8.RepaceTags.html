@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        8.Write a JavaScript function that replaces in a HTML document given as string
+        all the tags <a href="…">…</a> with corresponding tags [URL=…]…/URL]. 
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        
+        var url = "<p>Please visit <a href=\"http://academy.telerik. com\">our site</a> to choose a training course. Also visit <a href=\"www.devbg.org\">our forum</a> to discuss the courses.</p>"
+
+        alert(Extract(url))
+        jsConsole.writeLine(url)
+        jsConsole.writeLine(Extract(url))//it does not appear the opening and closing paragrph tags on the js-console (<p>... </p>)  but you can see them on the alert massage.
+
+
+        function Extract(text) {
+            var first = "<a href=\"";
+            var newFirst = "[URL=";
+            var last = "\">";
+            var newLast = "]";
+            var endLink = "</a>"
+            var newEndLink = "[/URL]"
+            
+            var firstIndex = text.indexOf(first);
+            var lastIndex = text.indexOf(endLink, firstIndex);
+
+            while (firstIndex > -1) {
+                
+                var oldLink = text.substring(firstIndex,(lastIndex + endLink.length)) //extracting the old hiper link tag
+                var newLink = oldLink.replace(first,newFirst)// replacing the start of the openig tag with the new one
+                newLink = newLink.replace(last,newLast)// replaceing the end of the opening tag with new
+                newLink = newLink.replace(endLink, newEndLink)// replacing the start of the closing tag with new one
+                text = text.replace(oldLink, newLink);// replacing the whole old link tag  with the changed tag.
+
+                firstIndex = text.indexOf(first);
+                lastIndex = text.indexOf(endLink, firstIndex);
+            }
+
+            return text;
+        }
+    </script>
+</body>
+</html>

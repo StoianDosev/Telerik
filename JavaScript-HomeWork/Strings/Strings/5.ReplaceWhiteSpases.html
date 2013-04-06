@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        5.Write a function that replaces non breaking white-spaces in a text with &nbsp;
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        var sometext = new String("Adolf Dasler if the founder of ADIDAS.");
+        var result = replaceWhiteSpaces(sometext, "&nbsp");
+        jsConsole.writeLine(result);
+
+        function replaceWhiteSpaces(text, newSymbol) {
+            var result = '';
+            for (var i = 0; i < text.length; i++) {
+                if (text[i] == ' ') {
+                    result += newSymbol;
+                }
+                else {
+                    result += text[i];
+                }
+            }
+            return result;
+        }
+
+    </script>
+</body>
+</html>

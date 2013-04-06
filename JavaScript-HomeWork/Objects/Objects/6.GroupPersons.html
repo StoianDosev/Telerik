@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        6.Write a function that groups an array of persons by age, first or last name. The function must return an associative array,
+         with keys - the groups, and values -arrays with persons in this groupsUse function overloading (i.e. just one function)
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+       
+        //function used for constructor of a object
+        function buildPerson(firstName, lastName, age) {
+            return {
+                FirstName: firstName,
+                LastName: lastName,
+                Age: age,
+            };
+        }
+        
+        //array of objects
+        var persons = [new buildPerson("Pesho", "Petrovski", 21), new buildPerson("Pesho", "Petrov", 22), new buildPerson("Gosho", "Petrov", 21)];
+
+        var property = "LastName";
+
+        //calling the groupBy function with arguments array of objects and property that we will use group objects
+        var group = groupBy(persons, property);
+
+        // printing the result
+        jsConsole.writeLine("Grouped by property: " + property)
+
+        for (var i in group) {
+            if (group[i] instanceof Array)// checking if the element is array of objects
+            {
+                jsConsole.writeLine("-------------------------------")
+                for (var k = 0; k < group[i].length; k++) {
+                    jsConsole.writeLine(group[i][k].FirstName + "  " + group[i][k].LastName + " Age: " + group[i][k].Age)
+                }
+            }
+            else {
+                jsConsole.writeLine("-------------------------------")
+                jsConsole.writeLine(group[i].FirstName + "  " + group[i].LastName + " Age: " + group[i].Age)
+            }
+
+        }
+
+
+        // universal function for grouping by any property of the object
+        function groupBy(persons, byItem) {
+
+            var groupedPersons = {};//using associative arrays
+            var Person = {};
+            var array = []
+
+            for (var i in persons) {
+                Person = persons[i][byItem];// array of objects with the property which is used for a key
+
+                if (groupedPersons[Person]) {// if the key is not empty we add array which holds the elements with equal property values
+
+                    if (!(groupedPersons[Person] instanceof Array)) {
+                        array.push(groupedPersons[Person])
+                    }
+                    array.push(persons[i]);
+                    groupedPersons[Person] = array
+                }
+                else // if the key is empty we add only the object
+                {
+                    groupedPersons[Person] = persons[i];
+
+                }
+            }
+            return groupedPersons;
+        }
+
+        
+        //functions for sorting by property ascending orger:
+
+        //function for sorting by FirstName
+        function orderedByFirstName(persons) {
+            for (var i = 0; i < persons.length; i++) {
+
+                var minFirstName = "ZZZZ";
+                var minIndex = 0;
+                var minPerson = null;
+
+                for (var k = i; k < persons.length; k++) {
+                    if (persons[k].FirstName < minFirstName) {
+                        minFirstName = persons[k].FirstName;
+                        minIndex = k;
+                        minPerson = persons[k];
+                    }
+                }
+                persons[minIndex] = persons[i]
+                persons[i] = minPerson;
+            }
+            return persons;
+        }
+        //function for sorting by LastName
+        function orderedByLastName(persons) {
+            for (var i = 0; i < persons.length; i++) {
+
+                var minLastName = "ZZZZ";
+                var minIndex = 0;
+                var minPerson = null;
+                for (var k = i; k < persons.length; k++) {
+                    if (persons[k].LastName < minLastName) {
+                        minLastName = persons[k].LastName;
+                        minIndex = k;
+                        minPerson = persons[k];
+                    }
+                }
+                persons[minIndex] = persons[i]
+                persons[i] = minPerson;
+            }
+            return persons;
+        }
+        //function for sorting by Age
+        function orderedByAge(persons) {
+            for (var i = 0; i < persons.length; i++) {
+
+                var minAge = 200;
+                var minIndex = 0;
+                var minPerson = null;
+
+                for (var k = i; k < persons.length; k++) {
+                    if (persons[k].Age < minAge) {
+                        minAge = persons[k].Age;
+                        minIndex = k;
+                        minPerson = persons[k];
+                    }
+                }
+                persons[minIndex] = persons[i]
+                persons[i] = minPerson;
+            }
+            return persons;
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        12.Write a function that creates a HTML UL using a template for every HTML LI. The source of the list should an array of elements. Replace all placeholders marked with –{…}–   with the value of the corresponding property of the object.
+    </div>
+    <br />
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <div data-type="template" id="list-item">
+        <strong>-{name}-</strong> <span>-{age}-</span>
+    </div>
+    <script>
+        var tmp = document.getElementById("list-item").innerHTML;// extacting as string all data in the tag with id:"list-item": "<strong>-{name}-</strong> <span>-{age}-</span>"
+
+        var people = [{ name: "Cicero", age: 52 }, { name: "Bai Lazo", age: 75 }, { name: "Alan Turing", age: 25 }];// list of objects
+
+        jsConsole.writeLine(generateList(tmp, people));//showing the output with  js-console, but the tags are not visible
+
+        alert(generateList(tmp, people))// showing the output with alert massage to visualize the tags 
+        
+        function generateList(text,people) {
+
+            var name = "-{name}-";
+            var age = "-{age}-";
+            var ulStart= "<ul>";
+            var ulEnd = "</ul>";
+            var liStart = "<li>";
+            var liEnd = "</li>";
+
+            text =  text.trim();
+            var array = [];
+
+            for (var i = 0; i < people.length; i++) {//iterate all elements in the array
+                
+                var peopleName = people[i].name;
+                var peopleAge = people[i].age;
+
+                var indexName = text.indexOf(name); // we always start with the original text
+                var namePlace = text.substr(indexName, name.length); // extracting the placeholder : -{name}-
+                var li = text.replace(namePlace, peopleName) //replacing placeholder with the needed value
+
+                var indexAge = li.indexOf(age);
+                var agePlace = li.substr(indexAge, age.length) // extracting the placeholder : -{age}-
+                li = li.replace(agePlace, peopleAge)//replacing placeholder with the needed value
+
+                li = liStart + li + liEnd;// adding <li> tags 
+                array.push(li);// adding all in array
+            }
+            text = array.join("");// creating string from the array 
+            
+            text = ulStart + text + ulEnd;// adding <ul> tags
+            return text;
+        }
+
+    </script>
+</body>
+</html>

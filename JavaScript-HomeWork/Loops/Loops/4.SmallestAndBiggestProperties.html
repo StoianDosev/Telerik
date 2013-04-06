@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+    <style>
+		input[type=text]{
+			border:1px solid black;
+			padding:5px 15px;
+			background-color:white;
+			color:black;
+			font-family:Consolas;		   
+			margin-bottom:5px;
+		}
+
+		a{
+			color:black;
+			border:1px solid black;
+			padding:5px 15px;						
+			text-decoration:none;	   
+			display:inline-block;		 
+			margin: 15px 0;
+		}
+
+		a:hover{
+			text-decoration:underline;
+		}
+	</style>
+</head>
+<body>
+    <div>
+        4.Write a script that finds the lexicographically smallest and largest property in document, window and navigator objects.
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        var array = new Array();
+
+        for (var property in document)
+        {
+            array.push(property)
+            
+        }
+        array.sort();
+        jsConsole.writeLine("Lexicographically the smallest in document is: " + array[0]);
+        jsConsole.writeLine("Lexicographically the biggest in document is: " + array[array.length - 1]);
+        
+
+
+        
+
+        jsConsole.writeLine();
+
+        array.length = 0;
+
+        for (var property in window)
+        {
+            array.push(property)
+        }
+        array.sort();
+        jsConsole.writeLine("Lexicographically the smallest in window is: " + array[0]);
+        jsConsole.writeLine("Lexicographically the biggest in window is: " + array[array.length - 1]);
+        
+
+        
+        array.length = 0;
+
+        jsConsole.writeLine();
+        for (var property in navigator)
+        {
+            array.push(property)
+        }
+        array.sort();
+        jsConsole.writeLine("Lexicographically the smallest in navigator is: " + array[0]);
+        jsConsole.writeLine("Lexicographically the biggest in navigator is: " + array[array.length - 1]);
+       
+
+    </script>
+</body>
+</html>

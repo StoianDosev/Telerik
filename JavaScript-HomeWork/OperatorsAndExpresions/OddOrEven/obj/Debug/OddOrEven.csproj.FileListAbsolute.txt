@@ -1,0 +1,10 @@
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\bin\OddOrEven.dll
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\bin\OddOrEven.pdb
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\obj\Debug\OddOrEven.csprojResolveAssemblyReference.cache
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\obj\Debug\OddOrEven.dll
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\obj\Debug\OddOrEven.pdb
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\bin\OddOrEven.dll
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\bin\OddOrEven.pdb
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\obj\Debug\OddOrEven.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\obj\Debug\OddOrEven.dll
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\obj\Debug\OddOrEven.pdb

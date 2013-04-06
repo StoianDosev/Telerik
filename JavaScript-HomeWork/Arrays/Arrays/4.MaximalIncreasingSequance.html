@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        4.Write a script that finds the maximal increasing sequence in an array. Example: {3, 2, 3, 4, 2, 2, 4} --> {2, 3, 4}.
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        var array = [3, 2, 3, 4, 8, 2, 2, 4, 1, 2, 3, 7, 8];
+
+
+        
+
+        var arrayCurrent = new Array();
+        var arrayMax = new Array();
+        var count = 1;
+        var maxCount = 0;
+        
+        for (var i = 0; i < array.length; i++)
+        {
+            if(array[i] < array[i+1])
+            {
+                if(count == 0)
+                {
+                    arrayCurrent.push(array[i])
+                }
+
+                count++;
+                arrayCurrent.push(array[i + 1])
+
+                if(count > maxCount)
+                {
+                    maxCount = count;
+                    arrayMax.length = 0;
+                    for (var k = 0; k < arrayCurrent.length; k++)
+                    {
+                        arrayMax[k] = arrayCurrent[k];
+                    }
+                }
+            }
+            else
+            {
+                count = 0;
+                arrayCurrent.length = 0;
+            }
+            
+        }
+        jsConsole.writeLine( "The maximal increasing sequence of : " + array + " is :");
+        jsConsole.writeLine(arrayMax);
+    </script>
+
+</body>
+</html>

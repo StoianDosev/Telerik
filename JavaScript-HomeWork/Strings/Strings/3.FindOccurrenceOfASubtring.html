@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        3.Write a JavaScript function that finds how many times a substring is contained in a given text (perform case insensitive search).
+    </div>
+    <br />
+    <label for="tb-text">Enter text</label>
+    <br />
+    <textarea id="tb-text" class="js-console-btn" style="width: 600px; height: 150px"></textarea>
+    <br />
+    <label for="tb-word">Enter the word: </label>
+    <input type="text" id="tb-word" class="js-console-btn" />
+    <a href="#" class="js-console-btn" onclick="onFindButtonClick()">Print</a>
+    <br />
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        function onFindButtonClick() {
+            var text = jsConsole.read("#tb-text")
+            var subString = jsConsole.read("#tb-word");
+
+            var countOfSubstrings = findCountOfSubstring(text, subString)
+            var result = listWords(text, subString)
+
+            for (var i in result) {
+                jsConsole.writeLine( result[i])
+            }
+            
+            jsConsole.writeLine("The count of the substring  \"" + subString + "\" in the text is: " + countOfSubstrings);
+        }
+
+
+        //extracting all words from the text into array
+        function getWords(text) {
+            var words = text.split(/[\s\.,-?!)(]/);
+            for (var i = 0; i < words.length; i++) {
+                //removing empty spacing
+                while (words[i] === "") {
+                    words.splice(i, 1);
+                }
+            }
+            return words;
+        }
+
+        // new function which extracts all words with the needed string 
+        function listWords(text, substring) {
+
+            var words = getWords(text);// extracting all words into the array
+            var array = [];
+
+            for (var i = 0; i < words.length; i++) {
+
+                var count = 0;
+                var items = "";
+                var word = words[i];
+                var index = word.indexOf(substring);
+                
+                word = word.toLocaleLowerCase();
+
+                if (index > -1)
+                {
+                    //searching how many time the string is reating in each word
+                    while (index > -1) {
+
+                        count++;
+                        index = word.indexOf(substring, index + 1);
+                    }
+
+                    //adding the count and the word in a string
+                    items = (count + "-->" + word);
+                    
+                }
+                //if we have any words we add them to array
+                if (items.length > 1) {
+                    array.push(items)
+                }
+            }
+            return array;
+        }
+
+        // finding the count of the needed string
+        function findCountOfSubstring(text,substring) {
+
+            var count = 0;
+            text = text.toLocaleLowerCase(); //making caseinsensitive search
+            var index = text.indexOf(substring);
+
+            if (index == -1) {//return -1 if we do not find that string in the text
+                return -1;
+            }
+            while (index>-1) {
+                count++;
+                index = text.indexOf(substring,index +1);
+            }
+            
+            return count;
+        }
+
+    </script>
+</body>
+</html>

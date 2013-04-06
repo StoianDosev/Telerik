@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        6.Write an expression that checks if given print (x,  y) is within a circle K(O, 5).
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        var xCoordinate = 5;
+        var yCoordinate = 2;
+        var radius = 5;
+        var current = xCoordinate * xCoordinate + yCoordinate * yCoordinate;
+        var result = (current < (radius * radius));
+        jsConsole.writeLine(result ? "Your point is in the circle." : "Your point is NOT in the circle.")
+    </script>
+</body>
+</html>

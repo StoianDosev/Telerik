@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        9.Write a function for extracting all email addresses from given text. All substrings that match the format
+        <identifier>@<host>…<domain>should be recognized as emails. Return the emails as array of strings.
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        var emails = "as.qw@pp.p.p, mrs.christinelagarde01@w.cn, i@opopodaspdosoalalal, as@ad.asdfklsdjfskjdf , mrs.henrietteconte40@yahoo.es, alalalalbla@, mrs.nancyobai@yahoo.com.au, mrs.nora.wong11@hotmail.com, mrs.rosemarry1@msn.com, mrs.safiafarkashgahdafi@live.com";
+        jsConsole.writeLine("The list of posible emails:")
+        jsConsole.writeLine(getArray(emails));// prints input email list
+        jsConsole.writeLine("The list of found emails:")
+        jsConsole.writeLine(findEmails(emails))//prints all extracted emails
+
+        function findEmails(text) {
+
+            var array = getArray(text)
+            var result = [];
+
+            for (var word in array) { //iterate the list of posible emails
+                var indexEt = array[word].indexOf('@');
+                var nextIndexEt = array[word].indexOf("@", indexEt + 1)
+
+                if (indexEt > 1 && nextIndexEt < 0) { //the email should have only one "@" symbol and atleast 2 symbols before it
+
+                    var email = getEmails(array[word]);
+                    if (email != -1) {
+                        result.push(email);
+                    }
+                }
+            }
+            return result;
+        }
+
+        function getEmails(word) {
+            var indexEt = word.indexOf("@");
+            var host = word.substring(indexEt + 1, word.length);
+            var indexDot = word.indexOf(".")
+
+            //the length of the host and domain can be atleast 5 symbol and the host can be atleast 2 symbols
+            if ((indexDot >= 2) && (host.length >= 5)) {
+
+                return word;
+            }
+            else {
+                return -1;
+            }
+        }
+
+        //extracting all emails into array
+        function getArray(text) {
+            var words = text.split(", ");
+            for (var i = 0; i < words.length; i++) {
+                //removing empty spacing 
+                while (words[i] === "") {
+                    words.splice(i, 1);
+                }
+            }
+            return words;
+        }
+    </script>
+</body>
+</html>

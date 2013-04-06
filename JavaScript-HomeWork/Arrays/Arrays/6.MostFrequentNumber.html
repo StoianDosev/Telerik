@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        6.Write a program that finds the most frequent number in an array. Example:{4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3} -> 4 (5 times)
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        //the array is different from the example
+        var array = [4, 1, 1, 4, 2, 3, 1, 4, 1, 2, 4, 9, 3];
+        var number = 0;
+        var currentNumber = 0;
+        var maxTimes = 0;
+        var currentTimes = 1;
+
+        // first variant to find repeating numbers in array. Just uncomment that and comment the second
+        // sorting the array in ascending order
+        //for (var i = 0; i < array.length; i++)
+        //{
+        //    var minIndex = 0;
+        //    var minNumber = Number.MAX_VALUE;
+        //    for (var k = i; k < array.length; k++)
+        //    {
+        //        if (array[k] < minNumber)
+        //        {
+        //            minNumber = array[k];
+        //            minIndex = k;
+        //        }
+        //    }
+        //    array[minIndex] = array[i];
+        //    array[i] = minNumber;
+        //}
+
+        // once sorted we check for equal sibling elements
+        //for (var i = 0; i < array.length -1; i++)
+        //{
+        //    //here we keep the current repeated elements
+        //    if(array[i] == array[i+1])
+        //    {
+        //        currentTimes++;
+        //        currentNumber = array[i];
+        //    }
+        //    if(maxTimes < currentTimes)
+        //    {
+        //        maxTimes = currentTimes;
+        //        number = currentNumber;
+                
+        //    }
+        //    // if numbers are not equal we return the default value of the counter
+        //    if(array[i] != array[i+1])
+        //    {
+        //        currentTimes = 1;
+        //    }
+        //}
+
+
+        // second variant to find repeating numbers in array
+        for (var i = 0; i < array.length; i++)
+        {
+            currentTimes = 0;
+            for (var k = 0; k < array.length; k++)
+            {
+                // cheking each time for equal elements 
+                if(array[i] == array[k])
+                {
+                    currentNumber = array[i]
+                    currentTimes++;
+                }
+            }
+            // cheking that we have the maximum repeated elemets
+            if(maxTimes <= currentTimes)
+            {
+                maxTimes = currentTimes;
+                number = currentNumber;
+            }
+            
+        }
+
+        jsConsole.writeLine("Number " + number + " repeats itself "+ maxTimes + " times.")
+    </script>
+</body>
+</html>

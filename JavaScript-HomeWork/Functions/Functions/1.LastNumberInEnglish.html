@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        1.Write a function that returns the last digit of given integer as an English word. Examples: 512 -> "two", 1024 -> "four", 12309 -> "nine"
+    </div>
+    <label for="tb-numbers">Enter the numbers: </label>
+    <input type="text" id="tb-numbers" class="js-console-btn" />
+    <a href="#" class="js-console-btn" onclick="onFindButtonClick()">Print</a>
+    <br />
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        function onFindButtonClick()
+        {
+            var numbers = jsConsole.read("#tb-numbers", ",");
+            jsConsole.writeLine(lastNumberInEnglish(numbers));
+        }
+
+        //function for parsing the last number of the input
+        function lastNumberInEnglish(numbers)
+        {
+            var result = (parseInt(numbers)) % 10;
+            SelectingEnglishNumber(result);
+        }
+
+        //function which writes the result
+        function SelectingEnglishNumber(digit)
+        {
+            switch (digit)
+            {
+                case 1:
+                    jsConsole.writeLine("The number is one.");
+                    break;
+                case 2:
+                    jsConsole.writeLine("The number is two.");
+                    break;
+                case 3:
+                    jsConsole.writeLine("The number is three.");
+                    break;
+                case 4:
+                    jsConsole.writeLine("The number is four.");
+                    break;
+                case 5:
+                    jsConsole.writeLine("The number is five.");
+                    break;
+                case 6:
+                    jsConsole.writeLine("The number is six.");
+                    break;
+                case 7:
+                    jsConsole.writeLine("The number is seven.");
+                    break;
+                case 8:
+                    jsConsole.writeLine("The number is eight.");
+                    break;
+                case 9:
+                    jsConsole.writeLine("The number is nine.");
+                    break;
+                case 0:
+                    jsConsole.writeLine("The number is zero.");
+                    break;
+                default:
+                    jsConsole.writeLine("You have entered invalid digit.");
+                    break;
+            }
+        }
+
+
+    </script>
+</body>
+</html>

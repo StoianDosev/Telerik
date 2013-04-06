@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>2.Write a script that compares two char arrays lexicographically (letter by letter).
+</div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        var arrayFirst = ["a", "s", "d", "f"];
+        var arraySecond = ["a", "s", "d", "f"];
+
+        var equal = true;
+
+        if (arrayFirst.length == arraySecond.length)
+        {
+            for (var i = 0; i < arrayFirst.length; i++)
+            {
+                if(arrayFirst[i] != arraySecond[i])
+                {
+                    equal = false;
+                }
+            }
+        }
+        jsConsole.write("The arrays are equal: ")
+        jsConsole.writeLine(equal ? "true" : "false");
+        
+    </script>
+</body>
+</html>

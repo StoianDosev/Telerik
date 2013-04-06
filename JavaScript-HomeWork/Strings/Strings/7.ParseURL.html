@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        7.Write a script that parses an URL address given in the format:
+		and extracts from it the [protocol], [server] and [resource] elements. Return the elements in a JSON object.
+        For example from the URL http://www.devbg.org/forum/index.php the following information should be extracted:
+    </div>
+    <br />
+    <label for="tb-word">Enter URL address: </label>
+    <input type="text" id="tb-word" class="js-console-btn" style="width:500px" />
+    <a href="#" class="js-console-btn" onclick="onFindButtonClick()">Print</a>
+    <br />
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+
+        function onFindButtonClick() {
+            var url = jsConsole.read("#tb-word");
+           
+            var result = ExtractURL(url);
+
+            for (var i in result) {
+                jsConsole.writeLine(i  + " : " + result[i])
+            }
+        }
+
+        function ExtractURL(text) {
+            var protSep = "://";
+            var serverSep = "/";
+            var address = {};// using JASON object
+            var protIndex = text.indexOf(protSep)
+
+            if(protIndex >-1)
+            {
+                //the key value is "protocol" and we add value if it exists
+                address["protocol"] = text.substring(0, protIndex); // adding averythig before  the separator "://"
+                text = text.substring(protSep.length + protIndex, text.length)// removing the protocol part from the address
+            }
+
+            var serverIndex = text.indexOf(serverSep);
+
+            if(serverIndex > -1)
+            {
+                //the key value is "server"and we add value if it exists
+                address["server"] = text.substring(0, serverIndex);//adding averythig before  the separator "/"
+                text = text.substring(serverSep.length + serverIndex, text.length);//removing the server part from the address
+            }
+            //the key value is "resource" and we add the rest of the url
+            address["resource"] = text;
+
+            return address;
+        }
+    </script>
+</body>
+</html>

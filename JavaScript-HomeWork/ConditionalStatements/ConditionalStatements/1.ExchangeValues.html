@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        1.Write an if statement that examines two integer variables and exchanges their values if the first one is greater than the second one.
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        var first = 3;
+        var second = 2;
+        var current = 0;
+
+        if (first > second) {
+            jsConsole.writeLine("Number " + first + " is bigger than number " + second);
+        }
+        else {
+            current = first;
+            first = second;
+            second = current;
+
+            jsConsole.writeLine("Number " + first + " is bigger than number " + second);
+        }
+    </script>
+</body>
+</html>

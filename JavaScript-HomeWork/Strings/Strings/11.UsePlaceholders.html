@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        11.Write a function that formats a string using placeholders.var --> str = stringFormat("Hello {0}!","Peter");//str = "Hello Peter!";
+    </div>
+    <br />
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+
+        var text = "{0}, {0}, {0} .... {0}, aз съм {1}, {0} :)"
+        jsConsole.writeLine(stringFormat(text,"Цицероне","Бай Лазо"))
+        
+        function stringFormat(text, item0, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11) {
+
+            var start = "{";
+           
+            var array = [item0, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11]
+
+            var indexStart = text.indexOf(start);
+           
+            while (indexStart > -1) {
+
+                var number = parseInt(text.substr(indexStart + 1, 1)); //extracting the number in the brackets of the placeholder
+
+                var holder = text.substr(indexStart, 3) // extracting the whole placeholder: {0}
+
+                text = text.replace(holder, array[number]) // replacing the placeholder with the item
+
+                indexStart = text.indexOf(start,indexStart+1);// seeking for new placeholder
+            }
+            return text;
+        }
+
+        //function builderStr() {
+        //    return {
+        //        arr: [],
+        //        append: function (str) {
+        //            this.arr.push(str)
+        //            return this.arr;
+        //        },
+        //        toString: function () {
+        //            return this.arr.join("");
+        //        }
+        //    }
+        //}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\ConditionalStatements\ConditionalStatements\bin\ConditionalStatements.dll
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\ConditionalStatements\ConditionalStatements\bin\ConditionalStatements.pdb
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\ConditionalStatements\ConditionalStatements\obj\Debug\ConditionalStatements.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\ConditionalStatements\ConditionalStatements\obj\Debug\ConditionalStatements.dll
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\ConditionalStatements\ConditionalStatements\obj\Debug\ConditionalStatements.pdb

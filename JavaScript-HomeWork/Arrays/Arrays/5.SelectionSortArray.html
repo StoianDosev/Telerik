@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        5.Sorting an array means to arrange its elements in increasing order. Write a script to sort an array. Use the "selection sort" algorithm: Find the smallest element, move it at the first position, find the smallest from the rest, move it at the second position, etc.
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+
+        var array = [4, 1, 1, 4, 2, 7, 3, 4, 4, 1, 2, 4, 9, 3, 5];
+        var imin = 0;
+        var imax = array.length - 1;
+
+
+        array.sort(
+            function (x, y) {
+                return (x == y) ? 0 : (x > y) ? 1 : -1;
+            });
+
+        jsConsole.writeLine(array);
+
+        function binarySearch(arr, key, imin, imax) {
+            if (imax < imin) {
+                return "Key not found! ";
+            }
+            else {
+                var imid = parseInt((imin + imax) / 2);
+
+                if (arr[imid] > key) {
+                    return binarySearch(arr, key, imin, imid - 1);
+                }
+                else if (arr[imid] < key) {
+                    return binarySearch(arr, key, imid + 1, imax);
+                }
+                else {
+                    return "Index is " + imid;
+                }
+            }
+        }
+
+        jsConsole.writeLine(binarySearch(array, 4, imin, imax));
+
+        //var array = [42, 18, 12, 22, 4, -1, 11, 101, 71, 8];
+
+        //for (var i = 0; i < array.length; i++)
+        //{
+        //    var minIndex = 0;
+        //    var minNumber = Number.MAX_VALUE;
+        //    for (var k = i; k < array.length; k++)
+        //    {
+        //        if (array[k] < minNumber)
+        //        {
+        //            minNumber = array[k];
+        //            minIndex = k;
+        //        }
+        //    }
+        //    array[minIndex] = array[i];
+        //    array[i] = minNumber;
+        //}
+        //jsConsole.writeLine(array)
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        4.You are given a text. Write a function that changes the text in all regions:
+        <upcase>text</upcase>
+        to uppercase.
+        <lowcase>text</lowcase>
+        to lowercase
+        <mixcase>text</mixcase>
+        to mix casing(random)
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        var htmlText = "We are <mixcase>living</mixcase> in a <upcase>yellow submarine</upcase>. We <mixcase>don't</mixcase> have <lowcase>anything</lowcase> else.";
+
+        var changedText = change(htmlText);
+        jsConsole.writeLine("Original text:");
+        jsConsole.writeLine(htmlText);
+        jsConsole.writeLine("Changed text:");
+        jsConsole.writeLine(changedText);
+
+        //fuction which is used to pass the cases to the changeCases() function
+        function change(text) {
+
+            var upFirst = "<upcase>";
+            var upLast = "</upcase>";
+            text = changeCases(text, upFirst, upLast)
+
+            var lowFirst = "<lowcase>";
+            var lowLast = "</lowcase>";
+            text = changeCases(text, lowFirst, lowLast)
+
+            var mixFirst = "<mixcase>";
+            var mixLast = "</mixcase>";
+            return changeCases(text, mixFirst, mixLast);
+        }
+
+        function changeCases(text, first, last) {
+
+            var indexFirst = text.indexOf(first)
+            var indexLast = text.indexOf(last)
+
+            while (indexFirst > -1 && indexLast > -1) {
+
+                var start = first.length + indexFirst;
+                var end = indexLast;
+
+                var subText = text.substring(start, end) // extracting the string for repalce
+
+                var changedText = detectCases(first, subText);// checking the case and returning the substring for replace which is already modified
+
+                text = text.replace(subText, changedText)// repalceing the the old substring with the changed one
+
+                indexFirst = text.indexOf(first, indexFirst + 1)
+                indexLast = text.indexOf(last, indexLast + 1)
+            }
+            return text;
+        }
+
+        //function which detects the key 
+        function detectCases(key, subtext) {
+            if (key == "<upcase>" || key == "</upcase>") {
+                subtext = subtext.toUpperCase();
+                return subtext;
+            }
+            if (key == "<lowcase>" || key == "</lowcase>") {
+                subtext = subtext.toLowerCase();
+                return subtext;
+            }
+            if (key == "<mixcase>" || key == "</mixcase>") {
+
+                var mixed = "";
+                subtext = subtext.toLowerCase();
+                for (var i = 0; i < subtext.length; i++) {
+
+                    if (i % 2 == 0) {
+                        mixed += subtext[i].toUpperCase()
+                    }
+                    else {
+                        mixed += subtext[i]
+                    }
+                }
+                return mixed;
+            }
+        }
+    </script>
+</body>
+</html>

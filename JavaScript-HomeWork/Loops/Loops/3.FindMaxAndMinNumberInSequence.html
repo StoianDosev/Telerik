@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+    <style>
+		input[type=text]{
+			border:1px solid black;
+			padding:5px 15px;
+			background-color:white;
+			color:black;
+			font-family:Consolas;		   
+			margin-bottom:5px;
+		}
+
+		a{
+			color:black;
+			border:1px solid black;
+			padding:5px 15px;						
+			text-decoration:none;	   
+			display:inline-block;		 
+			margin: 15px 0;
+		}
+
+		a:hover{
+			text-decoration:underline;
+		}
+	</style>
+</head>
+<body>
+    
+    <div>
+        3.Write a script that finds the max and min number from a sequence of numbers
+    </div>
+    <label for="tb-first">Enter the numbers: </label>
+    <input type="text" id="tb-first" />
+    <a href="#" onclick="onFindButtonClick()">Print</a>
+    <br />
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        function onFindButtonClick()
+        {
+            var max = Number.MIN_VALUE;
+            var min = Number.MAX_VALUE;
+
+            var numbers = jsConsole.read("#tb-first").split(" ");
+
+            for (var i = 0; i < numbers.length; i++)
+            {
+
+                var currentNum = parseInt(numbers[i]);
+                if (max < currentNum)
+                {
+                    max = currentNum;
+                }
+                if (min > currentNum)
+                {
+                    min = currentNum;
+                }
+            }
+
+            jsConsole.writeLine();
+            jsConsole.writeLine("The max number is: " + max);
+            jsConsole.writeLine("The min number is: " + min);
+        }
+        
+    </script>
+
+</body>
+</html>

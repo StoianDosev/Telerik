@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        5.Write a function that finds the youngest person in a given array of persons and prints his/hers full name
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+
+        // function used for constructor
+        function buildPerson(firstName,lastName,age)
+        {
+            return{
+                FirstName: firstName,
+                LastName: lastName,
+                Age: age,
+            }
+        }
+
+        // function that finds the youngest 
+        function getYougest(persons)
+        {
+            var youngestPerson = {};
+            var young = persons[0].Age;
+            for (var i in persons)
+            {
+                if (persons[i].Age < young)
+                {
+                    young = persons[i].Age;
+                    youngestPerson = persons[i];
+                }
+            }
+            return youngestPerson.FirstName + " " + youngestPerson.LastName + " age: " + youngestPerson.Age;
+        }
+
+        // creating some objects
+        var person1 = buildPerson("Pesho", "Peshev", 21)
+        var person2 = buildPerson("Tosho", "Petrovski", 18)
+        var person3 = buildPerson("Gosho", "Petev", 80)
+
+        // making array of the objects
+        var arr = [person1, person2, person3]
+       
+        //printing the array 
+        for (var i in arr) {
+            jsConsole.writeLine(arr[i].FirstName + " " + arr[i].LastName + " age:  " + arr[i].Age)
+        }
+
+        //printing the result of the function
+        jsConsole.writeLine("The youngest person from the list is: " + getYougest(arr))
+        
+
+    </script>
+</body>
+</html>

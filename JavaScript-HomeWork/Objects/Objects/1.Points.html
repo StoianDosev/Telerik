@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+       1. Write functions for working with shapes in  standard Planar coordinate system
+        Points are represented by coordinates P(X, Y)
+        Lines are represented by two points, marking their beginning and ending
+        L(P1(X1,Y1),P2(X2,Y2))
+        Calculate the distance between two points
+        Check if three segment lines can form a triangle
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        // All task are tested on Mozilla Firefox
+
+        //function used for constructor of Point object
+        function buildPoint(x, y) {
+            return {
+                X: x,
+                Y: y,
+                toString: function getPoint() {
+                    return this.X + ", " + this.Y;
+                }
+            }
+        }
+
+        //function used for constructor of Line object
+        function buildLine(point1, point2) {
+            return {
+                Point1: point1,
+                Point2: point2,
+                Length: getDistance(point1, point2),// the proprty Length is using the result of the function getDistance() from the Point objects
+                toString: function getPoint() {
+                    return "The line has coordinates:  first point: " + this.Point1.toString() + " second point: " + this.Point2.toString();
+                }
+            }
+        }
+        //function which calculates the distance bitween two Points
+        function getDistance(point1, point2) {
+            var result = (point1.X * point1.X + point1.Y * point1.Y) - (point2.X * point2.X + point2.Y * point2.Y);
+            if (result < 0) {
+                return Math.sqrt(result * (-1));
+            }
+            else {
+                return Math.sqrt(result);
+            }
+
+        }
+
+        //function that finds if it is possible to make triangle from the three Line objects
+        function CanLinesMakeTriangle(line1, line2, line3) {
+            if ((line1.Length + line2.Length) > line3.Length) {
+                return true;
+            }
+            else if ((line1.Length + line3.Length) > line2.Length) {
+                return true;
+            }
+            else if ((line1.Length + line3.Length) > line1.Length) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        //creating some points 
+        var pointOne = buildPoint(1, 1);
+        var pointTwo = buildPoint(2, 3);
+        var line = buildLine(pointOne, pointTwo);
+
+        //creating some lines
+        var line1 = buildLine(new buildPoint(2, 0), new buildPoint(2, 3));
+        var line2 = buildLine(new buildPoint(0, 0), new buildPoint(2, 0));
+        var line3 = buildLine(new buildPoint(0, 0), new buildPoint(2, 3));
+
+        var distance = getDistance(pointOne, pointTwo);
+
+        var isPosibleTriangle = CanLinesMakeTriangle(line1, line2, line3);
+
+
+        //print the result
+        jsConsole.writeLine("The length of the line is: "+ line2.Length);
+        jsConsole.writeLine( "The distance between the points is: " + distance);
+        jsConsole.writeLine("We can make triangle of the given lines: " + isPosibleTriangle);
+
+    </script>
+</body>
+</html>

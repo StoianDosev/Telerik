@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        3.Write a function that finds all the occurrences of word in a text
+        The search can case sensitive or case insensitive
+        Use function overloading.
+    </div>
+    <label for="tb-text">Enter text</label>
+    <br />
+    <textarea id="tb-text" class="js-console-btn" style="width: 600px"></textarea>
+    <br />
+    <br />
+    <label for="tb-sensitive">Enter "Yes" or "No" for Casesensetivne search: </label>
+    <input type="text" id="tb-sensitive" class="js-console-btn" />
+    <br />
+    <label for="tb-numbers">Enter the word: </label>
+    <input type="text" id="tb-numbers" class="js-console-btn" />
+    <a href="#" class="js-console-btn" onclick="onFindButtonClick()">Print</a>
+    <br />
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+
+        function onFindButtonClick()
+        {
+            var word = jsConsole.read("#tb-numbers");// input field for the word that you want to find in the text
+            var text = jsConsole.read("#tb-text");// input a custom text
+            var caseSense = jsConsole.read("#tb-sensitive");// case sensitive input
+            var sensitive = isSensitive(caseSense)
+            var oc = findTheWordOccur(text, word, sensitive);
+            jsConsole.writeLine(oc);
+        }
+
+        // function which returns the input for case sensitive
+        function isSensitive(sensitive)
+        {
+            if(sensitive.toLowerCase() === "yes")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        // function which extracts all words from the text using RegEx 
+        function stringInToArray(text)
+        {
+            var arrayText = text.split(/[\s\.,-?!)(]/);
+            for (var i = 0; i < arrayText.length; i++)
+            {
+                //removing sequenses of empty element
+                while (arrayText[i] === "")
+                {
+                    arrayText.splice(i, 1);
+                }
+            }
+            return arrayText;
+        }
+
+        // function which process the occurrence of the word
+        function findTheWordOccur(text , word, casesensitive)
+        {
+            var counter = 0;
+           
+            text = stringInToArray(text);
+
+            function IsNotCaseSansetive()
+            {
+                
+                for (var i in text)
+                {
+                    if (text[i].toLowerCase() === word.toLowerCase())
+                    {
+                        counter++;
+                    }
+                }
+            }
+            function IsCaseSansetive()
+            {
+                for (var i in text)
+                {
+                    if (text[i] === word)
+                    {
+                        counter++;
+                    }
+                }
+            }
+
+            switch (casesensitive)
+            {
+                case true: IsCaseSansetive(); break;
+                case false: IsNotCaseSansetive(); break;
+                default: IsNotCaseSansetive(); break; break;
+
+            }
+
+            return counter;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        10.Write a program that extracts from a given text all palindromes, e.g. "ABBA", "lamal", "exe".
+    </div>
+    <br />
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        var text = "WritW a program that extracts from a given text all palindromes, e.g. ABBA, lamal, exe";
+
+        jsConsole.writeLine("The palindromes are: " + FindPalindromes(text));
+
+        function FindPalindromes(text) {
+
+            var words = getWords(text)// extract function
+            var palindromes = []
+
+            for (var i = 0; i < words.length; i++) {
+
+                var word = words[i];
+
+                //the length of the word cannot be 1
+                if (word.length == 1) {
+                    continue;
+                }
+
+                var isPalindrome = true;
+
+                for (var k = 0; k < word.length; k++) {
+
+                    if (word[k] != word[word.length - 1 - k]) {
+                        isPalindrome = false;
+                        break;
+                    }
+                }
+
+                //adding all found palindromes
+                if (isPalindrome) {
+                    palindromes.push(word)
+                }
+
+            }
+
+            return palindromes;
+        }
+        //extracting all words from the text into array
+        function getWords(text) {
+            var words = text.split(/[\s\.,-?!)(]/);
+            for (var i = 0; i < words.length; i++) {
+                //removing empty spacing
+                while (words[i] === "") {
+                    words.splice(i, 1);
+                }
+            }
+            return words;
+        }
+    </script>
+</body>
+</html>

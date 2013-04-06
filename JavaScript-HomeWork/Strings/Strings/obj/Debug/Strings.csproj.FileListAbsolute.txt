@@ -1,0 +1,5 @@
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Strings\Strings\bin\Strings.dll
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Strings\Strings\bin\Strings.pdb
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Strings\Strings\obj\Debug\Strings.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Strings\Strings\obj\Debug\Strings.dll
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Strings\Strings\obj\Debug\Strings.pdb

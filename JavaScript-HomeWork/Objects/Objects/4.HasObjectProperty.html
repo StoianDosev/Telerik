@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        4.Write a function that checks if a given object contains a given property
+    </div>
+    <label for="tb-property">Enter the property: </label>
+    <input type="text" id="tb-property" class="js-console-btn" />
+    <a href="#" class="js-console-btn" onclick="onFindButtonClick()">Print</a>
+    <br />
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+
+        //The object with several properties
+        var student = {
+            name: "Forever Alone",
+            age: 20,
+            school: "Telerik",
+            number: 12345,
+            friends: false,
+            sex: "no",
+            movies: "yes"
+        }
+
+        
+        function onFindButtonClick()
+        {
+            var property = jsConsole.read("#tb-property");
+            jsConsole.writeLine("The propery exists: " + checkProperty(property, student))
+            jsConsole.writeLine("The value of property is: " + (student[property] != undefined ? student[property] : "no propery"))
+
+            jsConsole.writeLine("List of the properies: ")
+            for (var i in student) {
+                jsConsole.writeLine(i)
+            }
+        }
+
+        // fuction that checks the property 
+        function checkProperty(prop , object)
+        {
+            for (var i in object) {
+                if (i === prop) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        
+        
+        
+        
+    </script>
+</body>
+</html>

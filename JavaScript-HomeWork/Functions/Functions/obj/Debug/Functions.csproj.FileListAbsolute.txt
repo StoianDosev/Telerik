@@ -1,0 +1,5 @@
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Functions\Functions\bin\Functions.dll
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Functions\Functions\bin\Functions.pdb
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Functions\Functions\obj\Debug\Functions.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Functions\Functions\obj\Debug\Functions.dll
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\Functions\Functions\obj\Debug\Functions.pdb

@@ -1,0 +1,5 @@
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\bin\OddOrEven.dll
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\bin\OddOrEven.pdb
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\obj\Debug\OddOrEven.dll
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\obj\Debug\OddOrEven.pdb
+E:\SkyDrive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\obj\Debug\OperatorsAndExpressions.csprojResolveAssemblyReference.cache

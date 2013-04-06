@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        6.Write a function that checks if the element at given position in given array of integers is bigger than its two neighbors (when such exist).
+    </div>
+    <label for="tb-numbers">Enter the position: </label>
+    <input type="text" id="tb-numbers" class="js-console-btn" />
+    <a href="#" class="js-console-btn" onclick="onFindButtonClick()">Print</a>
+    <br />
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+
+        
+        var arr = [2, 2, 1, 1, 5];
+
+        function checkIfExist(arr) {
+            for (var i = 1; i < arr.length - 1; i++) {
+                if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        console.log(checkIfExist(arr));
+
+        jsConsole.writeLine(checkIfExist(arr));
+
+       
+
+        //var array = [4, 1, 2, 4, 6, 3, 1, 4, 8, 2, 4, 9, 3, 10];
+
+
+        
+
+        //jsConsole.writeLine("The array: " + array);
+        //function onFindButtonClick()
+        //{
+        //    var number = jsConsole.readInteger("#tb-numbers");
+        //    var isBigger = isElementBigger(array, number);
+        //    jsConsole.writeLine("The element " + array[number] + " is bigger than its neighbours :" + (isBigger));
+        //}
+        
+        ////function that checks if the element is bigger than its neighbours
+        //function isElementBigger(array, position)
+        //{
+        //    if(position > 0 && position < array.length-1)
+        //    {
+        //        if(array[position] > array[position-1] && array[position] > array[position+1])
+        //        {
+        //            return true;
+        //        }
+        //    }
+        //    else if( position == 0)
+        //    {
+        //        if(array[position] > array[position+1])// if the element is the first it is bigger only from its one neighbour from the right
+        //        {
+        //            return true;
+        //        }
+        //    }
+        //    else if (position == array.length - 1)// if the element is the last it is bigger only from its one neighbour from the left
+        //    {
+        //        if(array[position] > array[position-1])
+        //        {
+        //            return true;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+        //    return false;
+        //}
+
+        
+    </script>
+</body>
+</html>

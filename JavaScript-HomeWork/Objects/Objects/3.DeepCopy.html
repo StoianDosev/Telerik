@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        3.Write a function that makes a deep copy of an object.The function should work for both primitive and reference types
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+
+        //value types
+        var number = 123;
+        var str = "Pesho";
+       
+        //reference types
+        var person = {
+            name: "Gosho",
+            age: 20,
+        }
+        
+        var arr = [1, 2, 3, person];
+        
+        //clone function for deep copy
+        function clone(obj)
+        {
+            // cheking that we have value type
+            if (!(obj instanceof Object))
+            {
+                return obj;
+            }
+
+            //cheking if we have array type
+            if(obj instanceof Array)
+            {
+                var newArr = [];
+                for (var i = 0; i < obj.length; i++)
+                {
+                    newArr.push(clone(obj[i]))// using recursion of the clone function 
+                }
+                return newArr;
+            }
+           // object type
+            if(obj instanceof Object)
+            {
+                var newObj = {};
+                for (var i in obj)
+                {
+                    if(obj.hasOwnProperty(i))
+                    {
+                        newObj[i] = clone(obj[i]);// using recursion of the clone function 
+                    }
+                }
+                return newObj;
+            }
+        }
+        
+        //using clone function for deep copy 
+        var newObj = clone(arr)
+        arr[1] = "Pesho"
+
+        jsConsole.writeLine("The original array is chenged to: ")
+        for (var i in arr) {
+            jsConsole.writeLine(arr[i])
+        }
+
+        jsConsole.writeLine("The copy remains unchanged:")
+        for (var i in newObj) {
+            jsConsole.writeLine(newObj[i])
+        }
+        jsConsole.writeLine("The object's property value : " + newObj[3].name);
+       
+        
+    </script>
+</body>
+</html>

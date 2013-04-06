@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        3.Write a script that finds the biggest of three integers using nested if statements.
+    </div>
+    <div id="js-console"></div>
+    <script src="script/js-console.js"></script>
+    <script>
+        var first = 10;
+        var second = 25;
+        var third = 3;
+
+        if (first > second) {
+            if (first > third) {
+                jsConsole.writeLine("The biggest number is " + first);
+            }
+            else {
+                jsConsole.writeLine("The biggest number is " + third);
+            }
+        }
+        else {
+            if (second > third) {
+                jsConsole.writeLine("The biggest number is " + second);
+            }
+            else {
+                jsConsole.writeLine("The biggest number is " + third);
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>

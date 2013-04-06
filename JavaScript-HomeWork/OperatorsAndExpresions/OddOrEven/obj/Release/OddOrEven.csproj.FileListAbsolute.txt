@@ -1,0 +1,4 @@
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\bin\OddOrEven.dll
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\bin\OddOrEven.pdb
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\obj\Release\OddOrEven.dll
+E:\GoogleDrive\Google Drive\TelerikAcademy\JavaScript\HomeWork\OperatorsAndExpresions\OddOrEven\obj\Release\OddOrEven.pdb
