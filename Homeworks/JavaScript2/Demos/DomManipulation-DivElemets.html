@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+     div .one {
+            background-color: #b6ff00;
+            border-radius: 5px;
+            border:2px solid #808080;
+            display:inline-block;   
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<input type="text" id="input" />
+    <a href="#" id="text" onclick="onClick()" >Print</a>
+    <div class="content">
+    </div>
+    <ul class="first">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    
+    <script>
+        
+        var log = console.log;
+
+         var anchor = document.createElement("a")
+        anchor.href = "#";
+        anchor.innerHTML = "Oppppa";
+        anchor.setAttribute("draggeble", "true");
+        anchor.setAttribute("ondragstart", "drag(ev)")
+        anchor.setAttribute("onclick", "alert('OOOOO')")
+		
+        var startTime = new Date();
+        function onClick() {
+            var contentDiv = document.getElementsByClassName("content")[0];
+            var docFrag = document.createDocumentFragment();
+
+            while (contentDiv.firstChild) {
+                contentDiv.removeChild(contentDiv.firstChild);
+            }
+
+            var count =parseInt(document.getElementById("input").value );
+           
+            for (var i = 1; i <= count; i++) {
+                var div = document.createElement("div");
+                div.className = "one";
+                div.innerHTML = i;
+                docFrag.appendChild(div);
+            }
+
+            contentDiv.appendChild(docFrag);
+            
+            return false;
+        }
+        
+        console.log(new Date() - startTime);
+
+		function myFun() {
+            alert("MyFun: Opppa!!!")
+        }
+		
+		var a = document.createElement('a');
+        var linkText = document.createTextNode("my title text");
+        a.appendChild(linkText);
+        a.title = "my title text";
+        a.href = "#";
+        a.onclick = myFun;
+        contentDiv.appendChild(a);
+		
+        //var doc = document.getElementsByClassName("first");
+        //var div = document.createElement("div")
+        //document.body.appendChild(doc[0].cloneNode(true));
+        //doc[0].appendChild(div);
+
+        
+
+        //var currentNode = doc[0].firstChild.nextSibling
+        //while (currentNode) {
+        //    log(currentNode.nodeName + " has content : " + currentNode.innerHTML);
+        //    currentNode = currentNode.nextElementSibling;
+        //}
+
+        //var firstLiNode = doc[0].firstChild;
+        //firstLiNode.parentNode.removeChild(firstLiNode);
+        //firstLiNode = doc[0].firstChild;
+        //firstLiNode.parentNode.removeChild(firstLiNode);
+
+        //var a = doc[0].firstChild.nextSibling
+        //showElement(a);
+
+        //function showElement(element) {
+        //    while (element) {
+        //        log(element.nodeName + " has content : " + element.innerHTML);
+        //        element = element.nextSibling;
+        //    }
+        //}
+
+    </script>
+</body>
+</html>

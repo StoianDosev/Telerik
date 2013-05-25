@@ -1,0 +1,8 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\ExamHQC\HQC-2013-Calendar-System-Problem\CalendarSystemTest\bin\Debug\CalendarSystemTest.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\ExamHQC\HQC-2013-Calendar-System-Problem\CalendarSystemTest\bin\Debug\CalendarSystemTest.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\ExamHQC\HQC-2013-Calendar-System-Problem\CalendarSystemTest\bin\Debug\CalendarEventsSystem.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\ExamHQC\HQC-2013-Calendar-System-Problem\CalendarSystemTest\bin\Debug\PowerCollections.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\ExamHQC\HQC-2013-Calendar-System-Problem\CalendarSystemTest\bin\Debug\CalendarEventsSystem.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\ExamHQC\HQC-2013-Calendar-System-Problem\CalendarSystemTest\obj\Debug\CalendarSystemTest.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\ExamHQC\HQC-2013-Calendar-System-Problem\CalendarSystemTest\obj\Debug\CalendarSystemTest.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\ExamHQC\HQC-2013-Calendar-System-Problem\CalendarSystemTest\obj\Debug\CalendarSystemTest.pdb

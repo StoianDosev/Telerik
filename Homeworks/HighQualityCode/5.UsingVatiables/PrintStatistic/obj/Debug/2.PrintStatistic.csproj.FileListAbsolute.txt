@@ -1,0 +1,9 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UsingVatiables\PrintStatistic\bin\Debug\PrintStatistic.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UsingVatiables\PrintStatistic\bin\Debug\PrintStatistic.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UsingVatiables\PrintStatistic\bin\Debug\PrintStatistic.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UsingVatiables\PrintStatistic\obj\Debug\PrintStatistic.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UsingVatiables\PrintStatistic\obj\Debug\PrintStatistic.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UsingVatiables\PrintStatistic\obj\Debug\2.PrintStatistic.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\5.UsingVatiables\PrintStatistic\bin\Debug\PrintStatistic.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\5.UsingVatiables\PrintStatistic\obj\Debug\PrintStatistic.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\5.UsingVatiables\PrintStatistic\obj\Debug\PrintStatistic.pdb

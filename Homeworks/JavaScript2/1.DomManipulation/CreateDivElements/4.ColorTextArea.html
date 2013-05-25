@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #area {
+            color: blue;
+            background-color: rgb(255, 216, 0);
+        }
+        #task{
+            background-color: #b6ff00;
+            border: 2px solid #ffd800;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="task">
+        4.Create a text area and two inputs with type="color"
+Make the font color of the text area as the value of the first color input
+Make the background color of the text area as the value of the second input
+    </div>
+    <div class="wrapper"></div>
+    <script>
+        document.querySelector
+
+        var wrapper = document.getElementsByClassName("wrapper")[0];
+
+        //create textarea element
+        var textarea = document.createElement("textarea");
+        textarea.className = "textarea";
+        textarea.id = "area"
+        textarea.appendChild(document.createTextNode("Some text"));//add some text in the element
+
+        //create input type=color element for backgrond color
+        var inputBackgroundColor = document.createElement("input");
+        inputBackgroundColor.type = "color";
+        inputBackgroundColor.id = "background";
+        inputBackgroundColor.addEventListener("change", getBackgroundColor, false);
+
+        //create input type=color element for font color
+        var inputFontColor = document.createElement("input");
+        inputFontColor.type = "color";
+        inputFontColor.id = "fontcolor";
+        inputFontColor.addEventListener("change", getFontColor, false)
+
+        function getBackgroundColor() {
+            textarea.style.backgroundColor = document.getElementById("background").value;
+            console.log(document.getElementById("background").value);
+        }
+
+        function getFontColor() {
+            textarea.style.color = document.getElementById("fontcolor").value;
+        }
+
+        wrapper.appendChild(inputFontColor);
+        wrapper.appendChild(inputBackgroundColor);
+        wrapper.appendChild(textarea);
+
+    </script>
+</body>
+</html>

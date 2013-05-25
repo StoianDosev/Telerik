@@ -1,0 +1,14 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\TestSchool\obj\Debug\TestSchool.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\TestSchool\bin\Debug\TestSchool.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\TestSchool\bin\Debug\TestSchool.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\TestSchool\bin\Debug\School.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\TestSchool\bin\Debug\School.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\TestSchool\obj\Debug\TestSchool.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\TestSchool\obj\Debug\TestSchool.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\TestSchool\bin\Debug\TestSchool.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\TestSchool\bin\Debug\TestSchool.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\TestSchool\bin\Debug\School.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\TestSchool\bin\Debug\School.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\TestSchool\obj\Debug\TestSchool.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\TestSchool\obj\Debug\TestSchool.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\TestSchool\obj\Debug\TestSchool.pdb

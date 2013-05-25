@@ -1,0 +1,5 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\7.HighQualityMethods\Methods\bin\Debug\Methods.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\7.HighQualityMethods\Methods\bin\Debug\Methods.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\7.HighQualityMethods\Methods\obj\Debug\Methods.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\7.HighQualityMethods\Methods\obj\Debug\Methods.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\7.HighQualityMethods\Methods\obj\Debug\Methods.pdb

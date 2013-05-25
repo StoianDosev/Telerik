@@ -1,0 +1,9 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\ControlFlowConditionalStatementsAndLoops\LoopRefactoring\bin\Debug\LoopRefactoring.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\ControlFlowConditionalStatementsAndLoops\LoopRefactoring\bin\Debug\LoopRefactoring.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\ControlFlowConditionalStatementsAndLoops\LoopRefactoring\bin\Debug\LoopRefactoring.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\ControlFlowConditionalStatementsAndLoops\LoopRefactoring\obj\Debug\LoopRefactoring.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\ControlFlowConditionalStatementsAndLoops\LoopRefactoring\obj\Debug\LoopRefactoring.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\ControlFlowConditionalStatementsAndLoops\LoopRefactoring\obj\Debug\LoopRefactoring.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\6.ControlFlowConditionalStatementsAndLoops\LoopRefactoring\bin\Debug\LoopRefactoring.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\6.ControlFlowConditionalStatementsAndLoops\LoopRefactoring\obj\Debug\LoopRefactoring.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\6.ControlFlowConditionalStatementsAndLoops\LoopRefactoring\obj\Debug\LoopRefactoring.pdb

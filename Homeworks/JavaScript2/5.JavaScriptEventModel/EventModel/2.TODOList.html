@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #task {
+            background-color: #b6ff00;
+            border: 2px solid #ffd800;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body >
+    <div id="task">
+        2.Create a TODO list with the following UI controls
+        <ul>
+            <li>Form input for new Item</li>
+            <li>Button for adding the new Item</li>
+            <li>Button for deleting some item</li>
+            <li>Show and Hide Button</li>
+        </ul>
+    </div>
+    <div id="wrapper">
+        <input type="text" id="input" />
+        <button id="add">Add</button>
+        <button id="delete">Delete</button>
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
+        <div id="container"></div>
+    </div>
+    <script>
+        var wrapper = document.getElementById("wrapper");
+        var container = document.getElementById("container");
+        var text = document.getElementById("input");
+        var add = document.getElementById("add");
+        var deleteList = document.getElementById("delete");
+        var show = document.getElementById("show");
+        var hide = document.getElementById("hide");
+        var count = 0;
+
+        add.addEventListener("click", addInput, false);
+        deleteList.addEventListener("click", deleteItem, false);
+        show.addEventListener("click", showList, false);
+        hide.addEventListener("click", hideList, false);
+        
+        function addInput() {
+            var inputValue = text.value;
+            if (inputValue === "" || inputValue === undefined) {
+                return;
+            }
+            var listItem = document.createElement("input");
+            listItem.type = "checkbox";
+            listItem.className = "checkBox";
+            listItem.id = count;
+            var label = document.createElement("label");
+            label.className = "labelCheckbox"
+            label.setAttribute("for", count);
+            label.innerHTML = inputValue;
+            container.appendChild(listItem);
+            container.appendChild(label);
+            count++;
+        }
+
+        function showList() {
+            container.style.display = "block";
+        }
+
+        function hideList() {
+            container.style.display = "none" ;
+        }
+
+        function deleteItem() {
+            var checkBox = document.getElementsByClassName("checkBox");
+            var label = document.getElementsByClassName("labelCheckbox")
+            for (var i = 0; i < checkBox.length; i++) {
+                if (checkBox[i].checked === true) {
+                    container.removeChild(checkBox[i]);
+                    container.removeChild(label[i]);
+                }
+            }           
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\School\bin\Debug\School.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\School\bin\Debug\School.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\School\bin\Debug\School.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\School\obj\Debug\School.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\School\obj\Debug\School.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UnitTesting\School\obj\Debug\School.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\School\bin\Debug\School.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\School\obj\Debug\School.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\School\obj\Debug\School.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\School\bin\Debug\School.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\School\bin\Debug\School.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11.UnitTesting\School\obj\Debug\School.csprojResolveAssemblyReference.cache

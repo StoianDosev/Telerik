@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevelopmentTools", "DevelopmentTools\DevelopmentTools.csproj", "{47DD1F2B-EA93-4B92-9049-9DEFC5531DA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObfuscatorTest", "ObfuscatorTest\ObfuscatorTest.csproj", "{088DCDC4-FFB3-48CD-9E96-6F8E68E306FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47DD1F2B-EA93-4B92-9049-9DEFC5531DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47DD1F2B-EA93-4B92-9049-9DEFC5531DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47DD1F2B-EA93-4B92-9049-9DEFC5531DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47DD1F2B-EA93-4B92-9049-9DEFC5531DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088DCDC4-FFB3-48CD-9E96-6F8E68E306FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088DCDC4-FFB3-48CD-9E96-6F8E68E306FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088DCDC4-FFB3-48CD-9E96-6F8E68E306FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088DCDC4-FFB3-48CD-9E96-6F8E68E306FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

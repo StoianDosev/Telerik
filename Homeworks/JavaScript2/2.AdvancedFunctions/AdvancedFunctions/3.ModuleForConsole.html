@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #task {
+            background-color: #b6ff00;
+            border: 2px solid #ffd800;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="task">
+        3.Create a module to work with the console object.Implement functionality for:
+        <ul>
+            <li>Writing a line to the console </li>
+            <li>Writing a line to the console using a format</li>
+            <li>Writing to the console should call toString() to each element</li>
+            <li>Writing errors and warnings to the console with and without format</li>
+        </ul>
+    </div>
+    <div id="wrapper"></div>
+    <script>
+        var specialConsole = (function () {
+            var consoleNew = document.createElement("div");
+            var wrapper = document.getElementById("wrapper");
+            wrapper.style.fontFamily = "Consolas";
+
+            //function which sets style to the specialConsle div
+            (function () {
+                consoleNew.id = "console";
+                consoleNew.style.width = "50%";
+                consoleNew.style.height = "500px";
+                consoleNew.style.backgroundColor = "black";
+                consoleNew.style.padding = "10px";
+                consoleNew.style.margin = "5px";
+                wrapper.appendChild(consoleNew);
+            }());
+
+            //function which gets the placeholder
+            function formatString(text) {
+                if (text.length === 0) {
+                    return "\n";
+                }
+                else if (text.length === 1) {
+                    return text[0].toString();
+                }
+                else {
+                    var message = text[0];
+                    var start = "{";
+                    var end = "}";
+                    var indexStart = message.indexOf(start);
+                    var indexEnd = message.indexOf(end);
+
+                    while (indexStart > -1) {
+                        var number = parseInt(message.substr(indexStart + 1, indexEnd - indexStart + 1)); //extracting the number in the brackets of the placeholder
+                        var holder = message.substr(indexStart, indexEnd + 1 - indexStart); // extracting the whole placeholder: {0}
+                        message = message.replace(holder, text[number + 1]); // replacing the placeholder with the item
+                        indexStart = message.indexOf(start, indexStart + 1);// seeking for new placeholder
+                        indexEnd = message.indexOf(end, indexEnd + 1);
+                    }
+                    return message.toString();
+                }
+            }
+            function writeLine(text) {
+                var div = document.createElement("div");
+                var result = formatString(arguments);
+                div.appendChild(document.createTextNode(result));
+                div.style.color = "white";
+                consoleNew.appendChild(div);
+            }
+            function writeError(text) {
+                var result = formatString(arguments);
+                var div = document.createElement("div");
+                div.appendChild(document.createTextNode(result));
+                div.style.color = "red";
+                div.style.fontWeight = "bold";
+                consoleNew.appendChild(div);
+            }
+            function writeWarning(text) {
+                var result = formatString(arguments);
+                var div = document.createElement("div");
+                div.appendChild(document.createTextNode(result));
+                div.style.color = "yellow";
+                consoleNew.appendChild(div);
+            }
+            return {
+                writeLine: writeLine,
+                writeError: writeError,
+                writeWarning: writeWarning
+            }
+        }());
+
+        
+        specialConsole.writeLine("Some text which is nonsense.");
+        specialConsole.writeLine("Message: {0} {1}.", "nothing interesting", "yet");
+        specialConsole.writeLine(function () { return 1; });
+        specialConsole.writeWarning("Warning!!!");
+        var holder = "careful";
+        specialConsole.writeWarning("Warning: {0}, {0}, {0} !!!", holder);
+        specialConsole.writeError("Error");
+        specialConsole.writeError("Error: {0}", "Opa");
+        
+    </script>
+</body>
+</html>

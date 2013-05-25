@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .circle {
+            border-style: solid;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+
+        .rectangle {
+            border-style: solid;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+        #task {
+            background-color: #b6ff00;
+            border: 2px solid #ffd800;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="task">
+        2.Create a module that works with moving div elements. Implement functionality for:
+        <ul>
+            <li>Add new moving div element to the DOM</li>
+            <li>The movements of the div elements can be either circular or rectangular</li>
+            <li>The elements should be moving all the time</li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <button id="ellipse" value="ellipse">Make ellipse</button>
+        <button id="rectangle" value="rectangle">Make rectangle</button>
+    </div>
+    <script>
+        var mainDiv = document.getElementsByClassName("wrapper")[0];
+        var angle = 0;
+        var i;
+        var horizontalNumber = 100;
+        var verticalNumber = 100;
+
+        var buttonEllipse = document.getElementById("ellipse");
+        buttonEllipse.addEventListener("click", makeEllipse, false);
+
+        var buttonRectangle = document.getElementById("rectangle");
+        buttonRectangle.addEventListener("click", makeRectangle, false);
+
+        function makeRectangle() {
+            movingShapes.add(buttonRectangle.value)
+        }
+        function makeEllipse() {
+            movingShapes.add(buttonEllipse.value)
+        }
+
+        var movingShapes = (function () {
+
+            function add(shape) {
+
+                if (shape === "ellipse") {
+                    getEllipse();
+                }
+                if (shape === "rectangle") {
+                    getRectangle();
+                }
+
+                function getRectangle() {
+                    var rectangle = createRectangle();
+                    
+                    window.setInterval(moveRectangles, 1000 / 60);
+
+                    var newWidth = horizontalNumber;
+                    var newHeight = verticalNumber;
+                    var step = 1;
+
+                    function moveRectangles() {
+
+                        if (newWidth == horizontalNumber && newHeight == verticalNumber) {
+                            direction = 0;
+                        } else if (newWidth == 0 && newHeight == verticalNumber) {
+                            direction = 1;
+                        } else if (newWidth == 0 && newHeight == 0) {
+                            direction = 2;
+                        } else if (newWidth == horizontalNumber && newHeight == 0) {
+                            direction = 3;
+                        }
+
+                        switch (direction) {
+                            case 0: moveRight(); break;
+                            case 1: moveDown(); break;
+                            case 2: moveLeft(); break;
+                            case 3: moveUp(); break;
+                            default: break;
+                        }
+
+                        function moveRight() {
+                            newWidth -= step;
+                            horizontalNumber++;
+                            rectangle.style.left = horizontalNumber + "px";
+                        }
+                        function moveDown() {
+                            newHeight -= step;
+                            verticalNumber++;
+                            rectangle.style.top = verticalNumber + "px";
+                        }
+                        function moveLeft() {
+                            newWidth += step;
+                            horizontalNumber--;
+                            rectangle.style.left = horizontalNumber + "px";
+                        }
+                        function moveUp() {
+                            newHeight += step;
+                            verticalNumber--;
+                            rectangle.style.top = verticalNumber + "px";
+                        }
+                    }
+
+                    function createRectangle() {
+                        var rectangle = document.createElement("div");
+                        rectangle.className = "rectangle";
+                        rectangle.innerHTML = "Rectangle";
+                        setShapeStyle(rectangle);
+                        rectangle.style.borderRadius = "5px";
+                        mainDiv.appendChild(rectangle);
+                        return rectangle;
+                    }
+
+                }
+
+                function getEllipse() {
+
+                    createCircleDiv();
+                    window.setInterval(rotateCircles, 1000 / 60);
+
+                    function rotateCircles() {
+                        var centerTop = parseInt((screen.height - 400) / 2);
+                        var centerLeft = parseInt((screen.width - 100) / 2);
+                        var circleDivs = document.getElementsByClassName("circle");
+                        var radius = 8;
+
+                        for (i = 0; i < circleDivs.length; i++) {
+                            circleDivs[i].style.top = centerTop + Math.sin(angle + 2 * Math.PI / circleDivs.length * i) / radius * 1000 + 'px';
+                            circleDivs[i].style.left = centerLeft + 2 * Math.cos(angle + 2 * Math.PI / circleDivs.length * i) / radius * 1000 + 'px';
+                        }
+
+                        angle = angle + 0.01;
+                    }
+
+                    function createCircleDiv() {
+                        var circle = document.createElement("div");
+                        circle.className = "circle";
+                        circle.innerHTML = "Circle";
+                        setShapeStyle(circle);
+                        circle.style.borderRadius = "100%";
+                        mainDiv.appendChild(circle);
+                    }
+                }
+
+                function setShapeStyle(shape) {
+                    shape.style.position = "absolute";
+                    shape.style.width = "80px";
+                    shape.style.height = "80px";
+                    shape.style.borderWidth = "5px";
+                    shape.style.borderColor = getRandomColor();
+                    shape.style.backgroundColor = getRandomColor();
+                    shape.style.color = getRandomColor();
+                }
+
+                function getRandomColor() {
+                    var red = getRandomNumber(0, 255)
+                    var blue = getRandomNumber(0, 255)
+                    var green = getRandomNumber(0, 255)
+                    return "rgb(" + red + "," + green + "," + blue + ")";
+                }
+
+                function getRandomNumber(min, max) {
+                    return parseInt(Math.random() * (max - min) + min);
+                }
+
+            }
+            return {
+                add: add
+            };
+        }());
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

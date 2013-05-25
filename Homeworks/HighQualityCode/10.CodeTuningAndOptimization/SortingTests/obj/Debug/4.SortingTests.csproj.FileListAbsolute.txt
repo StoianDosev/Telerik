@@ -1,0 +1,11 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10. Code-Tuning-and-Optimization-Homework\SortingTests\bin\Debug\SortingTests.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10. Code-Tuning-and-Optimization-Homework\SortingTests\obj\Debug\SortingTests.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10. Code-Tuning-and-Optimization-Homework\SortingTests\obj\Debug\SortingTests.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeTuningAndOptimization\SortingTests\bin\Debug\SortingTests.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeTuningAndOptimization\SortingTests\obj\Debug\SortingTests.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeTuningAndOptimization\SortingTests\obj\Debug\SortingTests.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeTuningAndOptimization\SortingTests\bin\Debug\SortingTests.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeTuningAndOptimization\SortingTests\bin\Debug\SortingTests.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10.CodeTuningAndOptimization\SortingTests\bin\Debug\SortingTests.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10.CodeTuningAndOptimization\SortingTests\obj\Debug\SortingTests.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10.CodeTuningAndOptimization\SortingTests\obj\Debug\SortingTests.pdb

@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body, div {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper {
+            display: none;
+        }
+
+        #garbage1, #garbage2, #garbage3, #garbage4, #garbage5, #garbage6, #garbage7 {
+            width: 40px;
+            height: 40px;
+            background-image: url(pictures/garbage.jpg);
+            background-repeat: no-repeat;
+            -moz-background-size: 50px 50px;
+            -o-background-size: 50px 50px;
+            -webkit-background-size: 50px 50px;
+            background-size: 50px 50px;
+            float: left;
+        }
+
+        #recycleBin {
+            width: 150px;
+            height: 150px;
+            margin-top: 300px;
+        }
+        #bin {
+            width: 150px;
+            height: 150px;
+        }
+
+        #score {
+            text-align: center;
+            margin-left:600px;
+            display:inline-block;
+            border-radius: 15px;
+            border: 3px solid black;
+            width: 200px;
+            padding: 50px;
+        }
+
+        button {
+            float: right;
+            right: 0px;
+        }
+
+        #startgame {
+            margin-right: 50%;
+        }
+
+        #timer {
+            float: left;
+            text-align: center;
+            font-size: 50px;
+            border: 2px solid black;
+            border-radius: 15px;
+            width: 100px;
+            height: 100px;
+            visibility: hidden;
+        }
+
+        #task {
+            background-color: #b6ff00;
+            border: 2px solid #ffd800;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="task">
+        1.Write a client-side based web application that consists of a trash bucket and lots of trash items in the browser window. 
+        Implement the following functionality:
+        <ul>
+            <li>Drag trash items</li>
+            <li>Open the bucket when a trash item is being dragged over it and close when the trash is dragged out of the bucket, or is dropped in the bucket</li>
+            <li>To throw a trash item into the bucket, i.e. make it disappear from the browser window</li>
+        </ul>
+       2. Using the exercise with the bucket implement functionality for high-score
+        <ul>
+            <li>When the user cleans all the trash, he is asked for a nickname and his score is saved in the local storageThe score of the user is the time that took him to clean the trash</li>
+            <li>Implement a high-score board, that is visible on page load and shows the top 5 scores The 5 users that cleaned the trash fastest</li>            
+        </ul>
+    </div>
+    <button id="startgame" onclick="startGame()">Start new game</button>
+    <div id="wrapper">
+
+        <button id="clearScore" onclick="clearScore()">Clear Score</button>
+        <div id="score"></div>
+        <div id="timer"></div>
+        <div id="recycleBin" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="bin" src="pictures/recycleBin.jpg" ondragover="openBin(event)" onmouseout="closeBin(event)" />
+        </div>
+        <div id="container">
+        </div>
+    </div>
+    <script>
+        var interval;
+        var seconds = 0;
+        var topResultsNumber = 4;
+        var garbageCount = 5;
+        var container = document.getElementById("container");
+        var score = document.getElementById("score");
+        var timer = document.getElementById("timer")
+        var wrapper = document.getElementById("wrapper");
+
+        function startGame() {
+            wrapper.style.display = "block";
+            timer.style.visibility = "visible";
+            seconds = 0;
+            deleteGarbage();
+            startTimer(true);
+            createRandumGarbages();
+            setScore();
+        }
+
+        function clearScore() {
+            localStorage.clear();
+            setScore();
+        }
+
+        function startTimer(state) {
+            if (state) {
+                clearInterval(interval);
+                interval = setInterval(function () {
+                    timer.innerHTML = ++seconds;
+                }, 1000);
+            }
+            else {
+                clearInterval(interval);
+            }
+            return seconds;
+        }
+
+        function deleteGarbage() {
+            while (container.firstChild) {
+                container.removeChild(container.firstChild);
+            }
+        }
+
+        function setScore() {
+            if (!localStorage.length || localStorage.length == 0) {
+                score.innerHTML = "Empty Score";
+                return;
+            }
+
+            //pushing in to the array and sorting the values  
+            var array = [];
+            for (var i = 0; i < localStorage.length; i++) {
+                var keyStorage = localStorage.key(i);
+                var valueStorage = localStorage.getItem(keyStorage) | 0;
+                array.push({ key: keyStorage, value: valueStorage });
+            }
+            array = array.sort(function (a, b) {
+                return a.value - b.value;
+            });
+
+            score.innerHTML = "<strong>Top 5 Scores:<strong/> <br/>";
+            for (var i = 0; i < array.length; i++) {
+
+                score.innerHTML += (i + 1) + ". " + array[i].key + " : " + array[i].value + " sec.<br/>";
+                if (i === topResultsNumber) {
+                    break;
+                }
+            }
+        }
+        function createRandumGarbages() {
+            var buffer = document.createDocumentFragment();
+
+            for (var i = 0; i < garbageCount; i++) {
+                var garbage = document.createElement("div");
+                garbage.id = "garbage" + (i + 1);
+                garbage.setAttribute("draggable", "true");
+                garbage.setAttribute("ondragstart", "drag(event)");
+                garbage.style.position = "absolute";
+                getRandomPosition(garbage, 200, 600);
+                buffer.appendChild(garbage);
+            }
+            container.appendChild(buffer);
+        }
+
+        function getRandomPosition(div, min, max) {
+            div.style.top = getRandomNumber(min, max) + "px";
+            div.style.left = getRandomNumber(min, max) + "px";
+        }
+
+        function getRandomNumber(min, max) {
+            var randNumber = parseInt(Math.random() * (max - min) + min);
+            return randNumber;
+        }
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("dragged-id", ev.target.id);
+        }
+
+        function drop(ev) {
+            var data = ev.dataTransfer.getData("dragged-id");
+            var elementToRemove = document.getElementById(data);
+            container.removeChild(elementToRemove);
+
+            if (container.childElementCount === 0) {
+                var endTime = startTimer(false);
+                var name = prompt("Your time is: " + endTime + " sec. Enter your name", "");
+                localStorage.setItem(name, endTime);
+                setScore();
+            }
+        }
+
+        function openBin(ev) {
+            var bin = document.getElementById("bin");
+            bin.src = "pictures/recycleBinOpened.jpg";
+        }
+
+        function closeBin(ev) {
+            var bin = document.getElementById("bin");
+            bin.src = "pictures/recycleBin.jpg";
+        }
+    </script>
+</body>
+</html>

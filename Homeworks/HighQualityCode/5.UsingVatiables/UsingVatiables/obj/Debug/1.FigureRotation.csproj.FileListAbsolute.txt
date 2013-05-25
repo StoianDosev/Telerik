@@ -1,0 +1,9 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UsingVatiables\UsingVatiables\bin\Debug\UsingVatiables.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UsingVatiables\UsingVatiables\bin\Debug\UsingVatiables.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UsingVatiables\UsingVatiables\bin\Debug\UsingVatiables.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UsingVatiables\UsingVatiables\obj\Debug\1.FigureRotation.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UsingVatiables\UsingVatiables\obj\Debug\UsingVatiables.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\UsingVatiables\UsingVatiables\obj\Debug\UsingVatiables.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\5.UsingVatiables\UsingVatiables\bin\Debug\UsingVatiables.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\5.UsingVatiables\UsingVatiables\obj\Debug\UsingVatiables.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\5.UsingVatiables\UsingVatiables\obj\Debug\UsingVatiables.pdb

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #task{
+            background-color: #b6ff00;
+            border: 2px solid #ffd800;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="task">
+        3.Write a script that shims querySelector and querySelectorAll in older browsers
+    </div>
+    <div>QWQWW123232</div>
+    <div class="divClass">12334465565</div>
+    <div id="divID">asd</div>
+    
+    <script>
+        if (!document.querySelector ) {
+            document.querySelector = function querySelectorFunc(element) {
+                var firstSymbol = element.substr(0, 1);
+                var newElement = null;
+
+                switch (firstSymbol) {
+
+                    case "#":
+                        newElement = element.substr(1, element.length);
+                        return document.getElementById(newElement);
+
+                    case ".":
+                        newElement = element.substr(1, element.length);
+                        return document.getElementsByClassName(newElement)[0];
+
+                    default:
+                        newElement = element;
+                        return document.getElementsByTagName(newElement)[0];
+                }
+            }
+        }
+        if (!document.querySelectorAll) {
+            document.querySelector = function querySelectorFunc(element) {
+                var firstSymbol = element.substr(0, 1);
+                var newElement = null;
+
+                switch (firstSymbol) {
+                   
+                    case ".":
+                        newElement = element.substr(1, element.length);
+                        return document.getElementsByClassName(newElement);
+
+                    default:
+                        newElement = element;
+                        return document.getElementsByTagName(newElement);
+
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeTuningAndOptimization\AdvancedMathFunctionsTest\bin\Debug\AdvancedMathFunctionsTest.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeTuningAndOptimization\AdvancedMathFunctionsTest\obj\Debug\AdvancedMathFunctionsTest.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeTuningAndOptimization\AdvancedMathFunctionsTest\obj\Debug\AdvancedMathFunctionsTest.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10.CodeTuningAndOptimization\AdvancedMathFunctionsTest\bin\Debug\AdvancedMathFunctionsTest.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10.CodeTuningAndOptimization\AdvancedMathFunctionsTest\obj\Debug\AdvancedMathFunctionsTest.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10.CodeTuningAndOptimization\AdvancedMathFunctionsTest\obj\Debug\AdvancedMathFunctionsTest.pdb

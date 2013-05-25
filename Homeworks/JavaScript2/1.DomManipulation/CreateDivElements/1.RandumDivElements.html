@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .element {
+            text-align: center;
+            position: absolute;
+            border-style: solid;
+        }
+         #task{
+            background-color: #b6ff00;
+            border: 2px solid #ffd800;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="task">
+        1.Write a script that creates a number of div elements.
+    </div>
+    <input type="text" id="input" />
+    <a href="#" id="text" onclick="onClick()">Generate random divs</a>
+    <div class="wrapper"></div>
+    <script>
+        var mainDiv = document.getElementsByClassName("wrapper")[0];
+        
+        function onClick() {
+            while (mainDiv.firstChild) {
+                mainDiv.removeChild(mainDiv.firstChild);
+            }
+
+            var count = parseInt(document.getElementById("input").value);
+
+            createDivs(count);
+        }
+
+        //setting the number of the divs
+        function createDivs(count) {
+            for (var i = 0; i < count; i++) {
+                var div = createSingleDiv();
+                div.appendChild(createStrong());
+                generateRandomDivs(div);
+                mainDiv.appendChild(div);
+            }
+        }
+
+        function createSingleDiv() {
+            var div = document.createElement("div");
+            div.className = "element";
+            return div;
+        }
+
+        function createStrong() {
+            var strong = document.createElement("strong");
+            strong.appendChild(document.createTextNode("div"));
+            return strong;
+        }
+
+        function generateRandomDivs(div) {
+            getRandomPosition(div, 50, 1000);
+            getRandomWidthAndHeight(div, 20, 100);
+            getRandomBorderWidthAndRadius(div, 0, 20);
+            getRandumStyle(div);
+        }
+
+        function getRandumStyle(div) {
+            div.style.backgroundColor = getRandomColor();
+            div.style.color = getRandomColor();
+            div.style.borderColor = getRandomColor();
+        }
+
+        function getRandomWidthAndHeight(div, min, max) {
+
+            div.style.width = getRandomNumber(min, max) + "px";
+            div.style.height = getRandomNumber(min, max) + "px";
+        }
+
+        function getRandomPosition(div, min, max) {
+            div.style.top = getRandomNumber(min, max) + "px";
+            div.style.left = getRandomNumber(min, max) + "px";
+        }
+
+        function getRandomBorderWidthAndRadius(div, min, max) {
+            div.style.borderWidth = getRandomNumber(min, max) + "px";
+            div.style.borderRadius = getRandomNumber(min, max) + "px";
+        }
+
+        function getRandomColor() {
+            var red = getRandomNumber(0, 255)
+            var blue = getRandomNumber(0, 255)
+            var green = getRandomNumber(0, 255)
+            return "rgb(" + red + "," + green + "," + blue + ")";
+        }
+
+        function getRandomNumber(min, max) {
+            return parseInt(Math.random() * (max - min) + min);
+        }
+    </script>
+</body>
+</html>

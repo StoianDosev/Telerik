@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #task {
+            background-color: #b6ff00;
+            border: 2px solid #ffd800;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="task">
+        4.Draw the following graphics using canvas:
+    </div>
+    <canvas id="canvasElement" width="1000" height="1000"></canvas>
+    <script>
+        var canvas = document.getElementById("canvasElement");
+        var context = canvas.getContext("2d");
+
+        //head
+        context.strokeStyle = "rgb(51,125,143)";
+        context.lineWidth = "2"
+        makeElipse(100, 200, 50, 1, 1, 1);
+        context.fillStyle = "rgb(144,202,215)";
+        context.fill();
+        //eyes-left
+        context.strokeStyle = "rgb(51,125,143)";
+        context.lineWidth = "2"
+        makeElipse(70, 390, 12, 1, 1, 1 / 2);
+        context.fillStyle = "rgb(144,202,215)";
+        context.fill();
+        //eyeball: left
+        context.strokeStyle = "rgb(51,125,143)";
+        context.lineWidth = "2"
+        makeElipse(87, 98, 2, 1, 3 / 4, 2);
+        context.fillStyle = "rgb(51,125,143)";
+        context.fill();
+        //eyes-rigth
+        context.strokeStyle = "rgb(51,125,143)";
+        context.lineWidth = "2"
+        makeElipse(120, 390, 12, 1, 1, 1 / 2);
+        context.fillStyle = "rgb(144,202,215)";
+        context.fill();
+        //eyeball: right
+        context.strokeStyle = "rgb(51,125,143)";
+        context.lineWidth = "2"
+        makeElipse(155, 98, 2, 1, 3 / 4, 2);
+        context.fillStyle = "rgb(51,125,143)";
+        context.fill();
+        //mouth
+        context.strokeStyle = "rgb(51,125,143)";
+        context.lineWidth = "2"
+        makeElipse(80, 250, 10, 20, 2, 3 / 4);
+        context.fillStyle = "rgb(144,202,215)";
+        context.fill();
+
+        //nose
+        context.beginPath();
+        context.strokeStyle = "rgb(51,125,143)";
+        context.lineWidth = "2";
+        writeCanvasLine(95, 215, 80, 215);
+        writeCanvasLine(80, 215, 90, 195);
+
+        //hat
+        context.strokeStyle = "black";
+        context.lineWidth = "2"
+        makeElipse(100, 650, 55, 1, 1, 1 / 4);
+        context.fillStyle = "rgb(57,102,147)";
+        context.fill();
+        //downcurve
+        context.strokeStyle = "black";
+        context.lineWidth = "2"
+        context.save();
+        context.scale(1, 1 / 4);
+        context.beginPath();
+        context.arc(100, 600, 30, Math.PI, 0, true);
+        context.restore();
+        context.stroke();
+        context.fillStyle = "rgb(57,102,147)";
+        context.fill();
+        //cylinder
+        writeCanvasLine(70, 150, 70, 80);
+        writeCanvasLine(130, 150, 130, 80);
+        context.fillStyle = "rgb(57,102,147)";
+        context.fillRect(70, 80, 60, 70);
+        //upper curve
+        context.strokeStyle = "black";
+        context.lineWidth = "2"
+        makeElipse(101, 315, 30, 1, 1, 1 / 4);
+        context.fillStyle = "rgb(57,102,147)";
+        context.fill();
+
+        //bike: left wheel        
+        context.strokeStyle = "rgb(51,125,143)";
+        context.lineWidth = "2"
+        makeElipse(100, 500, 50, 1, 1, 1)
+        context.fillStyle = "rgb(144,202,215)";
+        context.fill();
+        //bike: right wheel
+        context.strokeStyle = "rgb(51,125,143)";
+        context.lineWidth = "2"
+        makeElipse(300, 500, 50, 1, 1, 1)
+        context.fillStyle = "rgb(144,202,215)";
+        context.fill();
+        //frame
+        context.strokeStyle = "rgb(51,125,143)";
+        context.lineWidth = "2"
+        writeCanvasLine(100, 500, 170, 500);
+        writeCanvasLine(170, 500, 270, 420);
+        writeCanvasLine(270, 420, 150, 420);
+        writeCanvasLine(150, 420, 100, 500);
+        writeCanvasLine(170, 500, 148, 400);
+        writeCanvasLine(130, 400, 170, 400);
+        //chain
+        context.strokeStyle = "rgb(51,125,143)";
+        context.lineWidth = "2"
+        makeElipse(180, 495, 10, 1, 1, 1);
+        writeCanvasLine(164, 494, 150, 480);
+        writeCanvasLine(175, 505, 190, 520);
+        writeCanvasLine(290, 500, 260, 380);
+        writeCanvasLine(260, 380, 220, 400);
+        writeCanvasLine(260, 380, 290, 340)
+
+        //house
+        context.beginPath();
+        context.lineWidth = "2"
+        context.fillStyle = "rgb(151,91,91)"
+        context.strokeStyle = "black";
+        context.fillRect(500, 200, 300, 250);
+        context.strokeRect(500, 200, 300, 250);       
+        context.stroke();
+
+        //roof
+        context.beginPath();
+        context.lineWidth = "2"
+        context.fillStyle = "rgb(151,91,91)"
+        context.strokeStyle = "black";
+        writeCanvasLine(500, 200, 650, 50);
+        context.lineTo(800, 200);
+        context.lineTo(500, 200);
+        context.fill();
+        writeCanvasLine(500, 200, 650, 50);
+        context.lineTo(800, 200);
+        context.lineTo(500, 200);
+        context.stroke();
+
+        //chimney
+        context.beginPath();
+        context.lineWidth = "2"
+        context.fillStyle = "rgb(151,91,91)"
+        context.strokeStyle = "black";
+        context.fillRect(730, 100, 30, 80);
+        writeCanvasLine(730, 100, 730, 180);
+        writeCanvasLine(760, 100, 760, 180);
+        makeElipse(746, 222, 15, 1, 1, 2 / 5);
+        context.fill();
+
+        //windows
+        makeWindow(530, 230);
+        makeWindow(670, 230);
+        makeWindow(670, 330);
+        //door:curve
+        context.strokeStyle = "black";
+        context.lineWidth = "2"
+        context.save();
+        context.scale(1, 2 / 5);
+        context.beginPath();
+        context.arc(570, 830, 40, 0, Math.PI, true);
+        context.restore();
+        context.stroke();
+        //door:gate
+        writeCanvasLine(530, 330, 530, 450);
+        writeCanvasLine(610, 330, 610, 450);
+        writeCanvasLine(570, 315, 570, 450);
+        //door: handlie-left
+        context.strokeStyle = "black";
+        context.lineWidth = "2"
+        makeElipse(560, 390, 6, 1, 1, 1);
+        //door: handlie-rigth
+        context.strokeStyle = "black";
+        context.lineWidth = "2"
+        makeElipse(590, 390, 6, 1, 1, 1)
+
+        function makeWindow(x,y) {
+            context.beginPath();
+            context.lineWidth = "2"
+            context.fillStyle = "black";
+            context.strokeStyle = "rgb(151,91,91)";
+            context.fillRect(x, y, 90, 70);
+            writeCanvasLine(x, y+35, x+90, y+35);
+            writeCanvasLine(x+45, y, x+45, y+90);
+        }
+
+        function writeCanvasLine(startX,startY,endX,endY ) {
+            context.moveTo(startX, startY);
+            context.lineTo(endX, endY);
+            context.stroke();
+        }
+
+        function makeElipse(centerX, centerY, radius, angle, scale1, scale2) {
+            context.save();
+            context.rotate(angle * Math.PI / 180);//rotate elipse
+            context.scale(scale1, scale2);
+            context.beginPath();
+            context.arc(centerX, centerY, radius, 0, 2 * Math.PI, true);
+            context.restore();
+            context.stroke();
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Demos\11. Test-Driven-Development-Demo-Homework\bin\Debug\Poker.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Demos\11. Test-Driven-Development-Demo-Homework\bin\Debug\Poker.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Demos\11. Test-Driven-Development-Demo-Homework\obj\Debug\Poker.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Demos\11. Test-Driven-Development-Demo-Homework\obj\Debug\Poker.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Demos\11. Test-Driven-Development-Demo-Homework\obj\Debug\Poker.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Demo-Homework\obj\Debug\Poker.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Demo-Homework\obj\Debug\Poker.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Demo-Homework\bin\Debug\Poker.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Demo-Homework\bin\Debug\Poker.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Demo-Homework\obj\Debug\Poker.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Homework\obj\Debug\Poker.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Homework\obj\Debug\Poker.pdb

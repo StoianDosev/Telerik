@@ -1,0 +1,5 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\9. Assertions-and-Exceptions-Homework\Exceptions-Homework\bin\Debug\Exceptions-Homework.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\9. Assertions-and-Exceptions-Homework\Exceptions-Homework\bin\Debug\Exceptions-Homework.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\9. Assertions-and-Exceptions-Homework\Exceptions-Homework\obj\Debug\Exceptions-Homework.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\9. Assertions-and-Exceptions-Homework\Exceptions-Homework\obj\Debug\Exceptions-Homework.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\9. Assertions-and-Exceptions-Homework\Exceptions-Homework\obj\Debug\Exceptions-Homework.pdb

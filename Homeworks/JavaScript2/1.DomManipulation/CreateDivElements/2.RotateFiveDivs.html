@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .circle {
+            border-style: solid;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+        #task{
+            background-color: #b6ff00;
+            border: 2px solid #ffd800;
+            margin:10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="task">
+        2.Write a script that creates 5 div elements and moves them in circular path with interval of 100 milliseconds
+    </div>
+    <div class="wrapper">
+    </div>
+    <script>
+        var mainDiv = document.getElementsByClassName("wrapper")[0];
+        var angle = 0;
+        var i;
+
+        generateCircles(5);
+
+        function generateCircles(count) {
+
+            for (i = 0; i < count; i++) {
+                createCircleDiv(i);
+            }
+
+            window.setInterval(rotateCircles, 100 / 360);
+        }
+
+        function createCircleDiv(count) {
+            var circle = document.createElement("div");
+            circle.className = "circle";
+            circle.innerHTML = "Circle: " + count;
+            setCircleStyle(circle);
+            mainDiv.appendChild(circle);
+        }
+
+        function rotateCircles() {
+            var centerTop = parseInt((screen.height - 300) / 2);
+            var centerLeft = parseInt((screen.width - 100) / 2);
+            var circleDivs = document.getElementsByClassName("circle");
+            var radius = 8;
+
+            for (i = 0; i < circleDivs.length; i++) {
+                circleDivs[i].style.top = centerTop + Math.sin(angle + 2 * Math.PI / circleDivs.length * i) / radius * 1000 + 'px';
+                circleDivs[i].style.left = centerLeft + Math.cos(angle + 2 * Math.PI / circleDivs.length * i) / radius * 1000 + 'px';
+            }
+
+            angle = angle + 0.01;
+        }
+
+        function setCircleStyle(circle) {
+            circle.style.position = "absolute";
+            circle.style.width = "100px";
+            circle.style.height = "100px";
+            circle.style.borderWidth = "5px";
+            circle.style.borderRadius = "100%";
+            circle.style.borderColor = getRandomColor();
+            circle.style.backgroundColor = getRandomColor();
+            circle.style.color = getRandomColor();
+        }
+
+        function getRandomColor() {
+            var red = getRandomNumber(0, 255)
+            var blue = getRandomNumber(0, 255)
+            var green = getRandomNumber(0, 255)
+            return "rgb(" + red + "," + green + "," + blue + ")";
+        }
+
+        function getRandomNumber(min, max) {
+            return parseInt(Math.random() * (max - min) + min);
+        }
+    </script>
+</body>
+</html>

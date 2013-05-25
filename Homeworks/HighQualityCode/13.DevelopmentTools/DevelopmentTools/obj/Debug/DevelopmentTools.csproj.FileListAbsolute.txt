@@ -1,0 +1,8 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\DevelopmentTools\DevelopmentTools\bin\Debug\DevelopmentTools.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\DevelopmentTools\bin\Debug\DevelopmentTools.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\DevelopmentTools\bin\Debug\DevelopmentTools.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\DevelopmentTools\bin\Debug\DevelopmentTools.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\DevelopmentTools\bin\Debug\log4net.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\DevelopmentTools\obj\Debug\DevelopmentTools.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\DevelopmentTools\obj\Debug\DevelopmentTools.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\DevelopmentTools\obj\Debug\DevelopmentTools.pdb

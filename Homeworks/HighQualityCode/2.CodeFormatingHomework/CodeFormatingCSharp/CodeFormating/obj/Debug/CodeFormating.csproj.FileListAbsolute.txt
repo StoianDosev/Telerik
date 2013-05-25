@@ -1,0 +1,11 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeFormating\CodeFormating\bin\Debug\CodeFormating.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeFormating\CodeFormating\bin\Debug\CodeFormating.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeFormating\CodeFormating\bin\Debug\CodeFormating.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeFormating\CodeFormating\obj\Debug\CodeFormating.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeFormating\CodeFormating\obj\Debug\CodeFormating.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeFormating\CodeFormating\obj\Debug\CodeFormating.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeFormating\CodeFormating\bin\Debug\PowerCollections.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\CodeFormating\CodeFormating\bin\Debug\PowerCollections.xml
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\2.CodeFormatingHomework\CodeFormatingCSharp\CodeFormating\bin\Debug\CodeFormating.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\2.CodeFormatingHomework\CodeFormatingCSharp\CodeFormating\obj\Debug\CodeFormating.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\2.CodeFormatingHomework\CodeFormatingCSharp\CodeFormating\obj\Debug\CodeFormating.pdb

@@ -1,0 +1,6 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10. Code-Tuning-and-Optimization-Homework\AdvancedMathFunctionsTest\bin\Debug\AdvancedMathFunctionsTest.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10. Code-Tuning-and-Optimization-Homework\AdvancedMathFunctionsTest\bin\Debug\AdvancedMathFunctionsTest.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10. Code-Tuning-and-Optimization-Homework\AdvancedMathFunctionsTest\bin\Debug\AdvancedMathFunctionsTest.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10. Code-Tuning-and-Optimization-Homework\AdvancedMathFunctionsTest\obj\Debug\AdvancedMathFunctionsTest.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10. Code-Tuning-and-Optimization-Homework\AdvancedMathFunctionsTest\obj\Debug\AdvancedMathFunctionsTest.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\10. Code-Tuning-and-Optimization-Homework\AdvancedMathFunctionsTest\obj\Debug\AdvancedMathFunctionsTest.pdb

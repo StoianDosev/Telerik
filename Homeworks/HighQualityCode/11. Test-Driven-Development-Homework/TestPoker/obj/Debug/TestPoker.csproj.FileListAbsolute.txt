@@ -1,0 +1,21 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Demos\TestPoker\bin\Debug\TestPoker.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Demos\TestPoker\bin\Debug\TestPoker.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Demos\TestPoker\bin\Debug\Poker.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Demos\TestPoker\bin\Debug\Poker.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Demos\TestPoker\obj\Debug\TestPoker.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Demos\TestPoker\obj\Debug\TestPoker.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Demos\TestPoker\obj\Debug\TestPoker.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Demo-Homework\TestPoker\bin\Debug\TestPoker.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Demo-Homework\TestPoker\bin\Debug\TestPoker.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Demo-Homework\TestPoker\bin\Debug\Poker.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Demo-Homework\TestPoker\bin\Debug\Poker.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Demo-Homework\TestPoker\obj\Debug\TestPoker.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Demo-Homework\TestPoker\obj\Debug\TestPoker.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Demo-Homework\TestPoker\obj\Debug\TestPoker.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Homework\TestPoker\bin\Debug\TestPoker.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Homework\TestPoker\bin\Debug\TestPoker.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Homework\TestPoker\bin\Debug\Poker.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Homework\TestPoker\bin\Debug\Poker.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Homework\TestPoker\obj\Debug\TestPoker.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Homework\TestPoker\obj\Debug\TestPoker.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\11. Test-Driven-Development-Homework\TestPoker\obj\Debug\TestPoker.pdb

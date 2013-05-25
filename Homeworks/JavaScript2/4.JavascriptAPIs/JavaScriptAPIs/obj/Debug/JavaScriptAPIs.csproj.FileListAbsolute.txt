@@ -1,0 +1,10 @@
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\WebApplication1\WebApplication1\bin\WebApplication1.dll
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\WebApplication1\WebApplication1\obj\Debug\JavaScriptAPIs.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\4.JavascriptAPIs\JavaScriptAPIs\bin\WebApplication1.dll
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\4.JavascriptAPIs\JavaScriptAPIs\bin\WebApplication1.pdb
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\4.JavascriptAPIs\JavaScriptAPIs\obj\Debug\JavaScriptAPIs.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\4.JavascriptAPIs\JavaScriptAPIs\obj\Debug\WebApplication1.dll
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\4.JavascriptAPIs\JavaScriptAPIs\obj\Debug\WebApplication1.pdb

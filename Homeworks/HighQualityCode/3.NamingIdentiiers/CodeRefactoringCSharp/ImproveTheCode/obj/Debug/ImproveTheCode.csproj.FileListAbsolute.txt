@@ -1,0 +1,6 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\3.NamingIdentiiers\CodeRefactoringCSharp\ImproveTheCode\bin\Debug\ImproveTheCode.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\3.NamingIdentiiers\CodeRefactoringCSharp\ImproveTheCode\bin\Debug\ImproveTheCode.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\3.NamingIdentiiers\CodeRefactoringCSharp\ImproveTheCode\bin\Debug\ImproveTheCode.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\3.NamingIdentiiers\CodeRefactoringCSharp\ImproveTheCode\obj\Debug\ImproveTheCode.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\3.NamingIdentiiers\CodeRefactoringCSharp\ImproveTheCode\obj\Debug\ImproveTheCode.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\3.NamingIdentiiers\CodeRefactoringCSharp\ImproveTheCode\obj\Debug\ImproveTheCode.pdb

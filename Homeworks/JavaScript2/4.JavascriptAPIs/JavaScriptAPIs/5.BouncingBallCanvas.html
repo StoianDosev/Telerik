@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        canvas {
+            display: block;
+        }
+        #task {
+            background-color: #b6ff00;
+            border: 2px solid #ffd800;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="task">
+        5.Draw a circle that flies inside a box. When it reaches an edge, it should bounce that edge.
+    </div>
+    <button id="start" onclick="start()">start</button>
+    <input type="text" id="text" placeholder="number of the circles." />
+    <canvas id="canvasElement" width="800" height="500"></canvas>
+    <script>
+        var canvas = document.getElementById("canvasElement");
+        var context = canvas.getContext("2d");
+        var interval = 0;
+        var width = canvas.width;
+        var height = canvas.height;
+        //draw frame
+        context.beginPath();
+        context.strokeStyle = "rgb(51,125,143)";
+        context.lineWidth = "2"
+        context.strokeRect(0, 0, width, height);
+        
+        function start() {
+            //clearing all setInterval functions
+            for (var interval = 0; interval < 9999; interval++) {
+                clearInterval(interval);
+            }
+            //clearing the frame every time we press start button
+            context.clearRect(1, 1, width - 2, height - 2);
+            //number of the circles for bouncing
+            var circleCount = parseInt(document.getElementById("text").value);
+            for (var i = 0; i < circleCount; i++) {
+                moveCircle();
+            }
+        }
+
+        function moveCircle() {
+            var radius = 10;
+            var direction = [1, 1];
+            var coordX = getRandomNumber(0, width - radius-1);
+            var coordY = getRandomNumber(0, height - radius-1);
+            var fillColor = getRandomColor();
+            var strokeColor = getRandomColor();
+            
+            interval = setInterval(updateCoordonates, 1);
+
+            function updateCoordonates() {
+                //uncoment to display circle without trace
+                //context.clearRect(1, 1, width - 2, height - 2);
+                var newX = coordX + direction[0];
+                var newY = coordY + direction[1];
+
+                if (newX + radius >= width-1) {
+                    direction[0] *= (-1);
+                    return;
+                }
+                if (newY + radius >= height-1) {
+                    direction[1] *= (-1);
+                    return;
+                }
+                if (newX - radius <= 1) {
+                    direction[0] *= (-1);
+                    return;
+                }
+                if (newY - radius <= 1) {
+                    direction[1] *= (-1);
+                    return;
+                }
+
+                coordX = newX;
+                coordY = newY;
+                drawCircle();
+            }
+
+            function drawCircle() {
+                context.beginPath();
+                context.fillStyle = fillColor;
+                context.strokeStyle = strokeColor
+                context.arc(coordX, coordY, radius, 0, 2 * Math.PI, true);
+                context.lineWidth = "1";
+                context.stroke();
+                context.fill();
+            }
+
+            function getRandomColor() {
+                var red = getRandomNumber(0, 255)
+                var blue = getRandomNumber(0, 255)
+                var green = getRandomNumber(0, 255)
+                return "rgb(" + red + "," + green + "," + blue + ")";
+            }
+
+            function getRandomNumber(min, max) {
+                var randNumber = parseInt(Math.random() * (max - min) + min);
+                return randNumber;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeRefactoring", "CodeRefactoring\CodeRefactoring.csproj", "{A5E0BE24-7763-4190-A3A5-B8B7A18A4940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper", "ImproveTheCode\Minesweeper.csproj", "{33424C45-4D93-4830-9E7C-CEC1FA8BE6E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5E0BE24-7763-4190-A3A5-B8B7A18A4940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E0BE24-7763-4190-A3A5-B8B7A18A4940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E0BE24-7763-4190-A3A5-B8B7A18A4940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E0BE24-7763-4190-A3A5-B8B7A18A4940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33424C45-4D93-4830-9E7C-CEC1FA8BE6E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33424C45-4D93-4830-9E7C-CEC1FA8BE6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33424C45-4D93-4830-9E7C-CEC1FA8BE6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33424C45-4D93-4830-9E7C-CEC1FA8BE6E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

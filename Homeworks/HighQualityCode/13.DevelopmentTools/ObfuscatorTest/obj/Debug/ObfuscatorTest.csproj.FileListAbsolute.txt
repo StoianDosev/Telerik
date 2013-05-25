@@ -1,0 +1,6 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\ObfuscatorTest\bin\Debug\ObfuscatorTest.exe.config
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\ObfuscatorTest\bin\Debug\ObfuscatorTest.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\ObfuscatorTest\bin\Debug\ObfuscatorTest.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\ObfuscatorTest\obj\Debug\ObfuscatorTest.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\ObfuscatorTest\obj\Debug\ObfuscatorTest.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\13.DevelopmentTools\ObfuscatorTest\obj\Debug\ObfuscatorTest.csprojResolveAssemblyReference.cache

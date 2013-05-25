@@ -1,0 +1,7 @@
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\12. Refactoring-Homework\MatrixTest\bin\Debug\MatrixTest.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\12. Refactoring-Homework\MatrixTest\bin\Debug\MatrixTest.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\12. Refactoring-Homework\MatrixTest\bin\Debug\GameFifteen.exe
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\12. Refactoring-Homework\MatrixTest\bin\Debug\GameFifteen.pdb
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\12. Refactoring-Homework\MatrixTest\obj\Debug\MatrixTest.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\12. Refactoring-Homework\MatrixTest\obj\Debug\MatrixTest.dll
+E:\SkyDrive\TelerikAcademy\HighQualityCode\Homeworks\12. Refactoring-Homework\MatrixTest\obj\Debug\MatrixTest.pdb

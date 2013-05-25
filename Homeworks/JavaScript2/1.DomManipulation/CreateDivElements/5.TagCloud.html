@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .tag {
+            display: inline;
+            margin: 5px;
+        }
+
+        .cloud {
+            border: 2px solid black;
+            background-color: #00ff90;
+            padding: 10px;
+            width: 70%;
+        }
+
+        a {
+            margin-right: 10px;
+        }
+
+        #task {
+            background-color: #b9ee7d;
+            border: 2px solid #ffd800;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="task">
+        5.Create a tag cloud: Visualize a string of tags (strings) in a given container.By given minFontSize and maxFontSize, generate the tags with different font-size, depending on the number of occurrences.
+    </div>
+    <input type="text" id="inputText" />
+    <a href="#" id="addElement" onclick="onClickAdd()">Add tag element</a>
+    <a href="#" id="removeElement" onclick="onClickRemove()">Remove tag</a>
+    <label for="minFont">Min font size</label>
+    <input type="number" value="10" id="minFont" />
+    <label for="maxFont">Max font size</label>
+    <input type="number" value="50" id="maxFont" />
+    <div class="wrapper"></div>
+    <script>
+        var wrapper = document.getElementsByClassName("wrapper")[0];
+        //create div for the tag cloud
+        var tagCloud = document.createElement("div");
+        tagCloud.className = "cloud";
+
+        var tagArray = ["cms", "javascript", "js", "js", "ASP.NET MVC", ".net", ".net", "css",
+            "wordpress", "xaml", "js", "http", "web", "asp.net", "asp.net MVC", "ASP.NET MVC",
+            "wp", "javascript", "cms", "js", "cms", "html", "javascript", "http", "http", "CMS", "http", "http", "js", ];
+
+        var arrayCloud = {};
+
+        //get mim and max size for font
+        var minFontSize = parseInt(document.getElementById("minFont").value);
+        var maxFontSize = parseInt(document.getElementById("maxFont").value);
+
+        createTagCoud();
+
+        function fillTagsInArray() {
+            arrayCloud = {};
+            for (var i = 0; i < tagArray.length; i++) {
+                var tag = tagArray[i].toLowerCase();
+                if (arrayCloud[tag]) {
+                    arrayCloud[tag]++;
+                }
+                else {
+                    arrayCloud[tag] = 1;
+                }
+            }
+        }
+        
+
+
+        function createTagCoud() {
+
+            clearOldTagCloud();
+            fillTagsInArray();
+
+            var maxTagCount = getTagMaxCount();
+            var minTagCount = getTagMinCount();
+            var fontSizeCoef = (maxFontSize - minFontSize) / (maxTagCount - minTagCount);
+
+            //creating new divs with value from the array of tag elements
+            for (var tagElement in arrayCloud) {
+
+                var count = parseInt(arrayCloud[tagElement]);
+                var font;
+
+                //seting min and max value of the font
+                if (count === minTagCount) {
+                    font = minFontSize;
+                }
+                if (count === maxTagCount) {
+                    font = maxFontSize;
+                }
+                else {
+                    font = minFontSize + (count - minTagCount) * fontSizeCoef;
+                }
+
+                //creating and styling div
+                var element = document.createElement("div");
+                element.className = "tag";
+                element.innerHTML = tagElement;
+                element.style.fontSize = font + "px";
+                element.style.color = getRandomColor();
+                tagCloud.appendChild(element);
+                wrapper.appendChild(tagCloud);
+            }
+        }
+
+        function clearOldTagCloud() {
+            while (tagCloud.firstChild) {
+                tagCloud.removeChild(tagCloud.firstChild)
+            }
+        }
+
+        function getTagMaxCount() {
+
+            var maxTagCount = 0;
+
+            for (var i in arrayCloud) {
+                if (arrayCloud[i] > maxTagCount) {
+                    maxTagCount = arrayCloud[i];
+                }
+            }
+            return maxTagCount
+        }
+
+        function getTagMinCount() {
+
+            var minTagCount = Number.MAX_VALUE;
+
+            for (var i in arrayCloud) {
+                if (arrayCloud[i] < minTagCount) {
+                    minTagCount = arrayCloud[i];
+                }
+            }
+            return minTagCount;
+        }
+
+        function getRandomColor() {
+            var red = getRandomNumber(0, 255)
+            var blue = getRandomNumber(0, 255)
+            var green = getRandomNumber(0, 255)
+            return "rgb(" + red + "," + green + "," + blue + ")";
+        }
+
+        function getRandomNumber(min, max) {
+            return parseInt(Math.random() * (max - min) + min);
+        }
+
+        //function which adds new element to the tag cloud
+        function onClickAdd() {
+            var newElement = document.getElementById("inputText").value.toLocaleLowerCase();
+            tagArray.push(newElement);
+            
+            createTagCoud();
+        }
+        //function which removes selected tag from the cloud;
+        function onClickRemove() {
+            var tagDelete = document.getElementById("inputText").value.toLocaleLowerCase();
+            for (var i in tagArray) {
+                while (tagArray[i] === tagDelete) {
+                    tagArray.splice(i, 1);
+                }
+            }
+            createTagCoud();
+        }
+    </script>
+</body>
+</html>

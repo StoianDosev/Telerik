@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        div{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="#" id="link">Click</a></li>            
+        </ul>
+    </div>
+    <script>
+        var div = document.getElementsByTagName("div")[0];
+        var a = document.getElementById("link");
+        //div.addEventListener("click", onClickFun, false);
+        div.addEventListener("click", onClickFun, true);
+        
+        console.log(a.nodeName);
+        console.log(a.nodeType)
+        console.log(a)
+
+        //a.addEventListener("click", onClickFun, false);
+        //a.addEventListener("click", onClickFun, true);
+
+
+        function onClickFun(ev) {
+            console.log("name: " + this.nodeName + "target name: "+ev.target.nodeName);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\JavaScriptEventModel\EventModel\bin\EventModel.dll
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\JavaScriptEventModel\EventModel\bin\EventModel.pdb
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\JavaScriptEventModel\EventModel\obj\Debug\EventModel.csprojResolveAssemblyReference.cache
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\JavaScriptEventModel\EventModel\obj\Debug\EventModel.dll
+E:\SkyDrive\TelerikAcademy\JavaScript2\Homeworks\JavaScriptEventModel\EventModel\obj\Debug\EventModel.pdb
