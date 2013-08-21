@@ -1,0 +1,7 @@
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowHTML\bin\Debug\SpecFlowHTML.dll.config
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowHTML\bin\Debug\SpecFlowHTML.dll
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowHTML\bin\Debug\SpecFlowHTML.pdb
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowHTML\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowHTML\obj\Debug\SpecFlowHTML.csprojResolveAssemblyReference.cache
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowHTML\obj\Debug\SpecFlowHTML.dll
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowHTML\obj\Debug\SpecFlowHTML.pdb

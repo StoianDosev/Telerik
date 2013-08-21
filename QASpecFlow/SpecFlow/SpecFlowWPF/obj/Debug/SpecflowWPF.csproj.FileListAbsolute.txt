@@ -1,0 +1,9 @@
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowWPF\bin\Debug\Specflow.dll.config
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowWPF\bin\Debug\Specflow.dll
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowWPF\bin\Debug\Specflow.pdb
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowWPF\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowWPF\bin\Debug\System.Net.Http.dll
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowWPF\bin\Debug\System.Net.Http.xml
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowWPF\obj\Debug\SpecflowWPF.csprojResolveAssemblyReference.cache
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowWPF\obj\Debug\Specflow.dll
+C:\Users\Stoyan\Documents\GitHub\Telerik\QASpecFlow\SpecFlow\SpecFlowWPF\obj\Debug\Specflow.pdb
